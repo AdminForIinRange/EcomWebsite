@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist", //i forgot to run `npm run build` lol
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
