@@ -122,7 +122,7 @@ export default function FormSubmit({}) {
     ) : (
       <></>
     )}
-    <FormControl>
+    <FormControl >
       <FormLabel htmlFor="email"> Email</FormLabel>
       <Input
         id="email"

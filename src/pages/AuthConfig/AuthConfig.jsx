@@ -167,9 +167,19 @@ export default function AuthConfig() {
             }}
             mt={"30px"}
             bgColor={"white"}
-            w={"600px"}
+            w={{
+              base: "350px",
+              xsm: "350px",
+              ssm: "500px",
+              sm: "500px",
+              md: "600px",
+              lg: "600px",
+              xl: "600px",
+              xxl: "600px",
+              xxxl: "600px",
+            }}
             h={"100%"}
-            p={"3%"}
+        
           >
            
            <FormSubmit

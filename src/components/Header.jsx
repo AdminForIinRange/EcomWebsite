@@ -78,7 +78,17 @@ export default function LoginHeading({signUp}) {
   return (
     <VStack>
         <Text fontSize={"50px"}>🪵</Text>
-        <Heading fontSize={"50px"}>
+        <Heading  fontSize={{
+          base: "30px",
+          xsm: "30px",
+          ssm: "30px",
+          sm: "50px",
+          md: "50px",
+          lg: "50px",
+          xl: "50px",
+          xxl: "50px",
+          xxxl: "50px",
+        }}>
           {signUp ? <> Sign Up your account </> : <> Login to your account </>}
         </Heading>
         <Text fontSize={"20px"}>
@@ -95,7 +105,17 @@ export default function LoginHeading({signUp}) {
               navigate("/");
             }}
           >
-            <Link fontSize={"20px"}>
+            <Link  fontSize={{
+          base: "17px",
+          xsm: "17px",
+          ssm: "17px",
+          sm: "17px",
+          md: "17px",
+          lg: "17px",
+          xl: "17px",
+          xxl: "25px",
+          xxxl: "20px",
+        }}>
               {signUp ? <> Log In</> : <> Sign Up </>}
             </Link>
           </Button>
