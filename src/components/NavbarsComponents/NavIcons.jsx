@@ -1,6 +1,6 @@
 import { Button, ButtonGroup, Avatar, Box } from "@chakra-ui/react";
 
-import { FaUser } from "react-icons/fa";
+
 import { FaHeart } from "react-icons/fa";
 
 import { FaBell } from "react-icons/fa";
