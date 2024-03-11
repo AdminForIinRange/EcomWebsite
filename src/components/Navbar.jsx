@@ -9,6 +9,7 @@ import {
   Highlight,
 
   Button,
+  useBreakpointValue,
   Text,
   ButtonGroup ,
 
@@ -16,17 +17,28 @@ import {
 
   InputRightAddon,
   Stack,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Wrap,
 
 } from "@chakra-ui/react";
 
 import {SearchIcon } from '@chakra-ui/icons'
 import { FaUser } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
-
+import { HamburgerIcon } from "@chakra-ui/icons";
 export default function Navbar() {
+  const isSmallScreen = useBreakpointValue({ base: true, sm: false });
+
   
   return (
    <HStack  h={"100px"} w={"100%"} justify={'center'} align={"center"} >
+
+    <Text fontSize={"40px"} mr={"5px"}> 
+    🦑
+    </Text>
     
     <InputGroup
     
@@ -35,7 +47,8 @@ export default function Navbar() {
       transform: "scale(1.01)",
      
     }}
-    w={"35%"}
+    w={"40%"}
+    minW={"40%"}
     h={"40px"}
     size={"lg"}
     variant="filled"
@@ -59,9 +72,27 @@ export default function Navbar() {
   <Button    borderLeftRadius={"0px"}     w={"10px"} >
        <SearchIcon  />
         </Button>
-<Stack flexDir={"row"}  ml={"50px"} gap={"40px"} w={"10px"} justify={"center"} align={"center"} >
+<Stack flexDir={"row"}  ml={"5px"} gap={"40px"} w={{base:"",
+}} justify={"center"} align={"center"} >
 
-<ButtonGroup variant={"ghost"} colorScheme="transparent" bgColor={"transparent"}  >
+{isSmallScreen?  <>
+  <Menu>
+              <MenuButton as={Button}  color={"black"} variant='outline'>
+                <HamburgerIcon />
+              </MenuButton>
+              <MenuList>
+                <MenuItem>Main</MenuItem>
+                <MenuItem>Services</MenuItem>
+                <MenuItem>Login</MenuItem>
+                <MenuItem>About</MenuItem>
+                <MenuItem>Account</MenuItem>
+                <MenuItem>Dashboard</MenuItem>
+       
+
+              </MenuList>
+            </Menu>
+
+</>  :<ButtonGroup variant={"ghost"} colorScheme="transparent" bgColor={"transparent"}  >
   <Button _hover={{transform: "scale(1.2)"}}>
   <FaUser size={"21px"}/>
   </Button>
@@ -69,7 +100,7 @@ export default function Navbar() {
   <FaHeart size={"21px"}/>
   </Button>
 
-</ButtonGroup>
+</ButtonGroup>}
 
 </Stack>
 
