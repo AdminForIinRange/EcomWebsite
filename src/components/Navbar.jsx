@@ -14,6 +14,8 @@ import {
   ButtonGroup ,
 
   VStack,
+  Avatar,
+  AvatarBadge,
 
   InputRightAddon,
   Stack,
@@ -22,6 +24,7 @@ import {
   MenuList,
   MenuItem,
   Wrap,
+  Box,
 
 } from "@chakra-ui/react";
 
@@ -29,8 +32,10 @@ import {SearchIcon } from '@chakra-ui/icons'
 import { FaUser } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { FaBell } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 export default function Navbar() {
-  const isSmallScreen = useBreakpointValue({ base: true, sm: false });
+  const isSmallScreen = useBreakpointValue({ base: true, md: false });
 
   
   return (
@@ -72,7 +77,7 @@ export default function Navbar() {
   <Button    borderLeftRadius={"0px"}     w={"10px"} >
        <SearchIcon  />
         </Button>
-<Stack flexDir={"row"}  ml={"5px"} gap={"40px"} w={{base:"",
+<Stack flexDir={"row"}    w={{base:"",
 }} justify={"center"} align={"center"} >
 
 {isSmallScreen?  <>
@@ -92,12 +97,24 @@ export default function Navbar() {
               </MenuList>
             </Menu>
 
-</>  :<ButtonGroup variant={"ghost"} colorScheme="transparent" bgColor={"transparent"}  >
+</>  :<ButtonGroup variant={"ghost"} colorScheme="transparent" bgColor={"transparent"} ml={"20px"} p={"0px"}>
   <Button _hover={{transform: "scale(1.2)"}}>
-  <FaUser size={"21px"}/>
+  <FaUser size={"23px"}/>
   </Button>
   <Button  _hover={{transform: "scale(1.2)"}}>
-  <FaHeart size={"21px"}/>
+  <FaHeart size={"23px"}/>
+  </Button>
+  <Button  _hover={{transform: "scale(1.2)"}}>
+  <FaBell  size={"23px"}/>
+  </Button>
+
+  <Button  _hover={{transform: "scale(1.2)"}}>
+ 
+ <Box position={"absolute"} top={"10px"} right={"10px"}  bgColor={"red"} w={"10px"} h={"10px"} borderRadius={"50%"}>
+  
+ </Box>
+
+  <FaShoppingCart   size={"23px"} />
   </Button>
 
 </ButtonGroup>}
