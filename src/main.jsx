@@ -30,9 +30,7 @@ const theme = extendTheme({
       },
     },
   },
-   fontSizes: {
-    responsiveHeading: ['sm', 'sm', 'sm', 'md', 'lg'],
-  },
+   
 });
 
 
