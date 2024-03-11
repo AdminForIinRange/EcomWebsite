@@ -97,9 +97,9 @@ export default function Navbar() {
               </MenuList>
             </Menu>
 
-</>  :<ButtonGroup variant={"ghost"} colorScheme="transparent" bgColor={"transparent"} ml={"20px"} p={"0px"}>
-  <Button _hover={{transform: "scale(1.2)"}}>
-  <FaUser size={"23px"}/>
+</>  :<ButtonGroup variant={"ghost"} colorScheme="transparent" bgColor={"transparent"} ml={"20px"} p={"0px"} color='gray' >
+  <Button _hover={{transform: "scale(1.2)"}}  >
+  <FaUser size={"23px"} />
   </Button>
   <Button  _hover={{transform: "scale(1.2)"}}>
   <FaHeart size={"23px"}/>
