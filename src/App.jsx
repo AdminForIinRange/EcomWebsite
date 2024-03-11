@@ -17,7 +17,7 @@ import Auth from "./pages/Auth/Auth.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route path="Home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="Auth" element={<Auth />} />
     </Route>
   )
