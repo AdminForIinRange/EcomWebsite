@@ -1,0 +1,15 @@
+<Text color={{
+    base: "red",
+    sm: "yellow",
+
+    md: "green",
+ 
+    lg: "blue",
+
+    xl: "aqua"
+   
+
+
+}}  fontFamily={"Raleway"} >
+Discover the Best with Our Featured Product! 
+</Text>
