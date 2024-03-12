@@ -1,17 +1,14 @@
-import { Box, HStack, Text, VStack ,   useBreakpointValue,} from "@chakra-ui/react";
-import React from "react";
-import SmallScreenProductBoard from "./Components/SmallScreenProductBoard";
-import IphoneScreen from "./Components/IphoneScreen";
+```js
 
+import { Box, HStack, Text, VStack } from "@chakra-ui/react";
+import React from "react";
 
 export default function ProductBoard() {
-  const isSmallScreen = useBreakpointValue({ base: true, lg: false });
-  const isSmallerScreen = useBreakpointValue({ base: true, sm: false });
   const responsiveHeading = ["3xl", "3xl", "3xl", "4xl", "4xl"];
   const responsiveSubheading = ["lg", "xl", "xl", "2xl", "2xl"];
 
   const responsiveProductHading = ["md", "lg", "xl", "xl", "xl"];
-  const responsiveProductSubheading = ["xs", "sm", "sm", "12px", "sm"];
+  const responsiveProductSubheading = ["xs", "sm", "sm", "sm", "sm"];
 
   const responsiveTextAlignment = [
     "center",
@@ -23,7 +20,7 @@ export default function ProductBoard() {
   const Frontproducts = [
     {
       product: "Smart thermostat",
-      description: "energy-saving temperature control.",
+      description: "Remote-controlled energy-saving temperature control.",
       src: "https://source.unsplash.com/gold-apple-iphone-smartphone-held-at-the-door-IJkSskfEqrM",
     },
     {
@@ -56,46 +53,30 @@ export default function ProductBoard() {
     { subheading: "Unveiling the Latest trendy tech" },
   ];
 
-
-
   return (
-
-
-    <Box p={"0% 3%"}>
-   { isSmallerScreen ? <IphoneScreen /> : <> { isSmallScreen ?  <> <SmallScreenProductBoard /> </> : <VStack mt={"125px"}>
-      
+    <Box p={"0% 1%"}>
+      <VStack mt={"125px"}>
         <HStack
           gap={"20px"}
           align={"start"}
-          flexWrap={["nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+          flexWrap={"wrap"}
           justify={"center"}
           w={"100%"}
           h={"100%"}
         >
+
+
+
+
+
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={"400px"}
+            w={["150px", "200px" ,"250px" ,"400px", "400px"]}
             h={"100%"}
             rounded={"xl"}
           >
-            <Box align={"left"} position={"absolute"} top={"100px"}>
-              <Text
-                
-                fontSize={responsiveHeading}
-                fontFamily={"Raleway"}
-                fontWeight={"700"}
-              >
-                Featured Porducts
-              </Text>
-              <Text
-                
-                fontSize={responsiveSubheading}
-                fontFamily={"Raleway"}
-              >
-                Discover the Best with Our Featured Product!
-              </Text>
-            </Box>
+           
             <Text fontSize={responsiveProductHading} fontWeight={"600"}>
               {Frontproducts[0].product}
             </Text>
@@ -106,7 +87,7 @@ export default function ProductBoard() {
             <Box
               mt={"15px"}
               w={"100%"}
-              h={"300px"}
+              h={["100px", "100px" ,"200px" ,"300px", "300px"]}
               rounded={"2xl"}
               bgSize={"cover"}
               bgImage={"url(" + Frontproducts[0].src + ")"}
@@ -115,10 +96,26 @@ export default function ProductBoard() {
             ></Box>
           </Box>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={"400px"}
+            w={["150px", "200px" ,"250px" ,"400px", "400px"]}
             h={"100%"}
             rounded={"xl"}
           >
@@ -131,7 +128,7 @@ export default function ProductBoard() {
             <Box
               mt={"15px"}
               w={"100%"}
-              h={"300px"}
+              h={["100px", "100px" ,"200px" ,"300px", "300px"]}
               rounded={"2xl"}
               bgSize={"cover"}
               bgImage={"url(" + Frontproducts[1].src + ")"}
@@ -140,10 +137,14 @@ export default function ProductBoard() {
             ></Box>
           </Box>
 
+
+
+
+
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={"815px"}
+            w={["315px","415px","815px","815px","815px"]}
             h={"100%"}
             rounded={"xl"}
           >
@@ -164,16 +165,16 @@ export default function ProductBoard() {
               bgRepeat={"no-repeat"}
             ></Box>
           </Box>
-        </HStack>
 
-        <HStack
-          gap={"20px"}
-          align={"start"}
-          flexWrap={"nowrap"}
-          justify={"center"}
-          w={"100%"}
-          h={"100%"}
-        >
+
+
+
+
+
+
+
+
+
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
@@ -224,9 +225,12 @@ export default function ProductBoard() {
             ></Box>
           </Box>
         </HStack>
-      </VStack>} </>}
+      </VStack>
     </Box>
   );
 }
 
 // going to clean up the code and refactor some elements
+
+
+```

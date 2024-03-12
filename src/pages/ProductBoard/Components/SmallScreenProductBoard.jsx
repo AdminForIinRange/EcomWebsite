@@ -1,17 +1,12 @@
-import { Box, HStack, Text, VStack ,   useBreakpointValue,} from "@chakra-ui/react";
+import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
-import SmallScreenProductBoard from "./Components/SmallScreenProductBoard";
-import IphoneScreen from "./Components/IphoneScreen";
 
-
-export default function ProductBoard() {
-  const isSmallScreen = useBreakpointValue({ base: true, lg: false });
-  const isSmallerScreen = useBreakpointValue({ base: true, sm: false });
+export default function SmallScreenProductBoard() {
   const responsiveHeading = ["3xl", "3xl", "3xl", "4xl", "4xl"];
   const responsiveSubheading = ["lg", "xl", "xl", "2xl", "2xl"];
 
   const responsiveProductHading = ["md", "lg", "xl", "xl", "xl"];
-  const responsiveProductSubheading = ["xs", "sm", "sm", "12px", "sm"];
+  const responsiveProductSubheading = ["xs", "12px", "sm", "sm", "sm"];
 
   const responsiveTextAlignment = [
     "center",
@@ -42,7 +37,7 @@ export default function ProductBoard() {
       src: " https://source.unsplash.com/person-clicking-apple-watch-smartwatch-rCOWMC8qf8A",
     },
     {
-      product: "Smart home security camera",
+      product: "home security camera",
       description: "Remote monitoring for home safety.",
       src: "https://source.unsplash.com/a-black-and-white-video-game-controller-VVBjk060DdY",
     },
@@ -56,30 +51,11 @@ export default function ProductBoard() {
     { subheading: "Unveiling the Latest trendy tech" },
   ];
 
-
-
   return (
 
+      <VStack >
 
-    <Box p={"0% 3%"}>
-   { isSmallerScreen ? <IphoneScreen /> : <> { isSmallScreen ?  <> <SmallScreenProductBoard /> </> : <VStack mt={"125px"}>
-      
-        <HStack
-          gap={"20px"}
-          align={"start"}
-          flexWrap={["nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
-          justify={"center"}
-          w={"100%"}
-          h={"100%"}
-        >
-          <Box
-            p={"2.5"}
-            bgColor={"#F6F6F6"}
-            w={"400px"}
-            h={"100%"}
-            rounded={"xl"}
-          >
-            <Box align={"left"} position={"absolute"} top={"100px"}>
+<VStack align={"center"} justify={"center"} mb={"50px"}>
               <Text
                 
                 fontSize={responsiveHeading}
@@ -95,7 +71,23 @@ export default function ProductBoard() {
               >
                 Discover the Best with Our Featured Product!
               </Text>
-            </Box>
+            </VStack>
+        <HStack
+          gap={"20px"}
+          align={"start"}
+          flexWrap={["wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+          justify={"center"}
+          w={"100%"}
+          h={"100%"}
+        >
+          <Box
+            p={"2.5"}
+            bgColor={"#F6F6F6"}
+            w={["340px", "340px", "340px", "400px", "400px"]}
+            h={"100%"}
+            rounded={"xl"}
+          >
+           
             <Text fontSize={responsiveProductHading} fontWeight={"600"}>
               {Frontproducts[0].product}
             </Text>
@@ -118,7 +110,7 @@ export default function ProductBoard() {
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={"400px"}
+            w={["340px", "340px", "340px", "400px", "400px"]}
             h={"100%"}
             rounded={"xl"}
           >
@@ -139,11 +131,19 @@ export default function ProductBoard() {
               bgRepeat={"no-repeat"}
             ></Box>
           </Box>
-
+        </HStack>
+        <HStack
+          gap={"20px"}
+          align={"start"}
+          flexWrap={["wrap", "wrap", "wrap", "wrap", "nowrap"]}
+          justify={"center"}
+          w={"100%"}
+          h={"100%"}
+        >
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={"815px"}
+            w={["340px", "700px", "700px", "700px", "400px"]}
             h={"100%"}
             rounded={"xl"}
           >
@@ -169,7 +169,7 @@ export default function ProductBoard() {
         <HStack
           gap={"20px"}
           align={"start"}
-          flexWrap={"nowrap"}
+          flexWrap={["wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
           justify={"center"}
           w={"100%"}
           h={"100%"}
@@ -177,7 +177,7 @@ export default function ProductBoard() {
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={"815px"}
+            w={["340px", "340px", "340px", "400px", "400px"]}
             h={"100%"}
             rounded={"xl"}
           >
@@ -202,7 +202,7 @@ export default function ProductBoard() {
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={"815px"}
+            w={["340px", "340px", "340px", "400px", "400px"]}
             h={"100%"}
             rounded={"xl"}
           >
@@ -224,8 +224,8 @@ export default function ProductBoard() {
             ></Box>
           </Box>
         </HStack>
-      </VStack>} </>}
-    </Box>
+      </VStack>
+
   );
 }
 

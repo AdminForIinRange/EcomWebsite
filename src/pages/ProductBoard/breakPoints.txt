@@ -13,3 +13,23 @@
 }}  fontFamily={"Raleway"} >
 Discover the Best with Our Featured Product! 
 </Text>
+
+
+
+ <Box align={"left"} position={"absolute"} top={"100px"}>
+              <Text
+                textAlign={responsiveTextAlignment}
+                fontSize={responsiveHeading}
+                fontFamily={"Raleway"}
+                fontWeight={"700"}
+              >
+                Featured Porducts
+              </Text>
+              <Text
+                textAlign={responsiveTextAlignment}
+                fontSize={responsiveSubheading}
+                fontFamily={"Raleway"}
+              >
+                Discover the Best with Our Featured Product!
+              </Text>
+            </Box>
