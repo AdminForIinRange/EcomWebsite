@@ -1,9 +1,14 @@
-import { Box, HStack, Text, VStack ,   useBreakpointValue,} from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  Text,
+  VStack,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import React from "react";
 import SmallScreenProductBoard from "./Components/SmallScreenProductBoard";
 import IphoneScreen from "./Components/IphoneScreen";
-
-
+import HeadphoneYellow from "../../assets/ProductBanner/HeadphoneYellow.png"
 export default function ProductBoard() {
   const isSmallScreen = useBreakpointValue({ base: true, lg: false });
   const isSmallerScreen = useBreakpointValue({ base: true, sm: false });
@@ -51,181 +56,232 @@ export default function ProductBoard() {
   const FeaturedAdvertBannerOne = [
     {
       src: "https://source.unsplash.com/woman-wearing-blue-denim-shorts-watching-the-body-of-water-CYrXeFH2KBw",
+      header: "Get The best Tech",
+      subheading: "Unveiling the Latest trendy tech" 
     },
-    { header: "Get The best Tech" },
-    { subheading: "Unveiling the Latest trendy tech" },
+   
+    { src: "https://source.unsplash.com/flatlay-photography-of-wireless-headphones-PDX_a_82obo",
+    header: "Featured Porducts",
+    subheading: "Discover the Best with Our Featured Product!"  },
   ];
 
-
-
   return (
+    <>
+      <Box p={"0% 3%"}>
+        {isSmallerScreen ? (
+          <IphoneScreen />
+        ) : (
+          <>
+            {" "}
+           
+              <VStack>
+                <HStack
+                  gap={"20px"}
+                  align={"start"}
+                  justify={"center"}
+                  w={"100%"}
+                  h={"100%"}
+                >
+                  <Box
+                    p={"2.5"}
+                    bgColor={"#F6F6F6"}
+                    w={"100%"}
+                    h={"100%"}
+                    rounded={"xl"}
+                  >
+                    <Box
+                      mt={"15px"}
+                      w={"100%"}
+                      h={"300px"}
+                      rounded={"2xl"}
+                      bgSize={"cover"}
+                      bgImage={HeadphoneYellow}
+                      bgPos={"center"}
+                      bgRepeat={"no-repeat"}
+                      p={"1%"}
+                  
+                      justifyContent={"end"}
+                      alignItems={"end"}
+                    >
+                      <VStack
+                        w={"100%"}
+                        h={"100%"}
+                        align={"left"}
+                        justify={"end"}
+                      >
+                        <Text
+                          textAlign={""}
+                          fontSize={responsiveHeading}
+                          fontFamily={"Raleway"}
+                          fontWeight={"700"}
+                        >
+                          {FeaturedAdvertBannerOne[1].subheading}
+                        </Text>
+                        <Text
+                          fontSize={responsiveSubheading}
+                          fontFamily={"Raleway"}
+                        >
+                         {FeaturedAdvertBannerOne[1].subheading}
+                        </Text>
+                      </VStack>
+                    </Box>
+                  </Box>
+                </HStack>
 
+                <HStack
+                  gap={"20px"}
+                  align={"start"}
+                  flexWrap={["wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+                  justify={"center"}
+                  w={"100%"}
+                  h={"100%"}
+                >
+                  <Box
+                    p={"2.5"}
+                    bgColor={"#F6F6F6"}
+                    w={"100%"}
+                    h={"100%"}
+                    rounded={"xl"}
+                  >
+                    <Box
+                      align={"left"}
+                      position={"absolute"}
+                      top={"500px"}
+                    ></Box>
+                    <Text fontSize={responsiveProductHading} fontWeight={"600"}>
+                      {Frontproducts[0].product}
+                    </Text>
+                    <Text py={1} fontSize={responsiveProductSubheading}>
+                      {Frontproducts[0].description}
+                    </Text>
 
-    <Box p={"0% 3%"}>
-   { isSmallerScreen ? <IphoneScreen /> : <> { isSmallScreen ?  <> <SmallScreenProductBoard /> </> : <VStack mt={"125px"}>
-      
-        <HStack
-          gap={"20px"}
-          align={"start"}
-          flexWrap={["nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
-          justify={"center"}
-          w={"100%"}
-          h={"100%"}
-        >
-          <Box
-            p={"2.5"}
-            bgColor={"#F6F6F6"}
-            w={"400px"}
-            h={"100%"}
-            rounded={"xl"}
-          >
-            <Box align={"left"} position={"absolute"} top={"100px"}>
-              <Text
-                
-                fontSize={responsiveHeading}
-                fontFamily={"Raleway"}
-                fontWeight={"700"}
-              >
-                Featured Porducts
-              </Text>
-              <Text
-                
-                fontSize={responsiveSubheading}
-                fontFamily={"Raleway"}
-              >
-                Discover the Best with Our Featured Product!
-              </Text>
-            </Box>
-            <Text fontSize={responsiveProductHading} fontWeight={"600"}>
-              {Frontproducts[0].product}
-            </Text>
-            <Text py={1} fontSize={responsiveProductSubheading}>
-              {Frontproducts[0].description}
-            </Text>
+                    <Box
+                      mt={"15px"}
+                      w={"100%"}
+                      h={"300px"}
+                      rounded={"2xl"}
+                      bgSize={"cover"}
+                      bgImage={"url(" + Frontproducts[0].src + ")"}
+                      bgPos={"center"}
+                      bgRepeat={"no-repeat"}
+                    ></Box>
+                  </Box>
 
-            <Box
-              mt={"15px"}
-              w={"100%"}
-              h={"300px"}
-              rounded={"2xl"}
-              bgSize={"cover"}
-              bgImage={"url(" + Frontproducts[0].src + ")"}
-              bgPos={"center"}
-              bgRepeat={"no-repeat"}
-            ></Box>
-          </Box>
+                  <Box
+                    p={"2.5"}
+                    bgColor={"cyan.200"}
+                    w={"100%"}
+                    h={"100%"}
+                    rounded={"xl"}
+                  >
+                    <Text fontSize={responsiveProductHading} fontWeight={"600"}>
+                      {Frontproducts[1].product}
+                    </Text>
+                    <Text py={1} fontSize={responsiveProductSubheading}>
+                      {Frontproducts[1].description}
+                    </Text>
+                    <Box
+                      mt={"15px"}
+                      w={"100%"}
+                      h={"300px"}
+                      rounded={"2xl"}
+                      bgSize={"cover"}
+                      bgImage={"url(" + Frontproducts[1].src + ")"}
+                      bgPos={"center"}
+                      bgRepeat={"no-repeat"}
+                    ></Box>
+                  </Box>
 
-          <Box
-            p={"2.5"}
-            bgColor={"#F6F6F6"}
-            w={"400px"}
-            h={"100%"}
-            rounded={"xl"}
-          >
-            <Text fontSize={responsiveProductHading} fontWeight={"600"}>
-              {Frontproducts[1].product}
-            </Text>
-            <Text py={1} fontSize={responsiveProductSubheading}>
-              {Frontproducts[1].description}
-            </Text>
-            <Box
-              mt={"15px"}
-              w={"100%"}
-              h={"300px"}
-              rounded={"2xl"}
-              bgSize={"cover"}
-              bgImage={"url(" + Frontproducts[1].src + ")"}
-              bgPos={"center"}
-              bgRepeat={"no-repeat"}
-            ></Box>
-          </Box>
+                  <Box
+                    p={"2.5"}
+                    bgColor={"gray.300"}
+                    w={"150%"}
+                    h={"100%"}
+                    rounded={"xl"}
+                  >
+                    <Text fontSize={responsiveProductHading} fontWeight={"600"}>
+                      {Frontproducts[2].product}
+                    </Text>
+                    <Text py={1} fontSize={responsiveProductSubheading}>
+                      {Frontproducts[2].description}
+                    </Text>
+                    <Box
+                      mt={"15px"}
+                      w={"100%"}
+                      h={"300px"}
+                      rounded={"2xl"}
+                      bgSize={"cover"}
+                      bgImage={"url(" + Frontproducts[2].src + ")"}
+                      bgPos={"center"}
+                      bgRepeat={"no-repeat"}
+                    ></Box>
+                  </Box>
+                </HStack>
 
-          <Box
-            p={"2.5"}
-            bgColor={"#F6F6F6"}
-            w={"815px"}
-            h={"100%"}
-            rounded={"xl"}
-          >
-            <Text fontSize={responsiveProductHading} fontWeight={"600"}>
-              {Frontproducts[2].product}
-            </Text>
-            <Text py={1} fontSize={responsiveProductSubheading}>
-              {Frontproducts[2].description}
-            </Text>
-            <Box
-              mt={"15px"}
-              w={"100%"}
-              h={"300px"}
-              rounded={"2xl"}
-              bgSize={"cover"}
-              bgImage={"url(" + Frontproducts[2].src + ")"}
-              bgPos={"center"}
-              bgRepeat={"no-repeat"}
-            ></Box>
-          </Box>
-        </HStack>
+                <HStack
+                  gap={"20px"}
+                  align={"start"}
+                  flexWrap={"nowrap"}
+                  justify={"center"}
+                  w={"100%"}
+                  h={"100%"}
+                >
+                  <Box
+                    p={"2.5"}
+                    bgColor={"tan"}
+                    w={"100%"}
+                    h={"100%"}
+                    rounded={"xl"}
+                  >
+                    <Text fontSize={responsiveProductHading} fontWeight={"600"}>
+                      {Frontproducts[3].product}
+                    </Text>
+                    <Text py={1} fontSize={responsiveProductSubheading}>
+                      {Frontproducts[3].description}
+                    </Text>
+                    <Box
+                      mt={"15px"}
+                      w={"100%"}
+                      h={"150px"}
+                      rounded={"2xl"}
+                      bgSize={"cover"}
+                      bgImage={"url(" + Frontproducts[3].src + ")"}
+                      bgPos={"center "}
+                      bgRepeat={"no-repeat"}
+                    ></Box>
+                  </Box>
 
-        <HStack
-          gap={"20px"}
-          align={"start"}
-          flexWrap={"nowrap"}
-          justify={"center"}
-          w={"100%"}
-          h={"100%"}
-        >
-          <Box
-            p={"2.5"}
-            bgColor={"#F6F6F6"}
-            w={"815px"}
-            h={"100%"}
-            rounded={"xl"}
-          >
-            <Text fontSize={responsiveProductHading} fontWeight={"600"}>
-              {Frontproducts[3].product}
-            </Text>
-            <Text py={1} fontSize={responsiveProductSubheading}>
-              {Frontproducts[3].description}
-            </Text>
-            <Box
-              mt={"15px"}
-              w={"100%"}
-              h={"150px"}
-              rounded={"2xl"}
-              bgSize={"cover"}
-              bgImage={"url(" + Frontproducts[3].src + ")"}
-              bgPos={"center "}
-              bgRepeat={"no-repeat"}
-            ></Box>
-          </Box>
-
-          <Box
-            p={"2.5"}
-            bgColor={"#F6F6F6"}
-            w={"815px"}
-            h={"100%"}
-            rounded={"xl"}
-          >
-            <Text fontSize={responsiveProductHading} fontWeight={"600"}>
-              {Frontproducts[4].product}
-            </Text>
-            <Text py={1} fontSize={responsiveProductSubheading}>
-              {Frontproducts[4].description}
-            </Text>
-            <Box
-              mt={"15px"}
-              w={"100%"}
-              h={"150px"}
-              rounded={"2xl"}
-              bgSize={"cover"}
-              bgImage={"url(" + Frontproducts[4].src + ")"}
-              bgPos={"center "}
-              bgRepeat={"no-repeat"}
-            ></Box>
-          </Box>
-        </HStack>
-      </VStack>} </>}
-    </Box>
+                  <Box
+                    p={"2.5"}
+                    bgColor={"blue.300"}
+                    w={"100%"}
+                    h={"100%"}
+                    rounded={"xl"}
+                  >
+                    <Text fontSize={responsiveProductHading} fontWeight={"600"}>
+                      {Frontproducts[4].product}
+                    </Text>
+                    <Text py={1} fontSize={responsiveProductSubheading}>
+                      {Frontproducts[4].description}
+                    </Text>
+                    <Box
+                      mt={"15px"}
+                      w={"100%"}
+                      h={"150px"}
+                      rounded={"2xl"}
+                      bgSize={"cover"}
+                      bgImage={"url(" + Frontproducts[4].src + ")"}
+                      bgPos={"center "}
+                      bgRepeat={"no-repeat"}
+                    ></Box>
+                  </Box>
+                </HStack>
+              </VStack>
+            {" "}
+          </>
+        )}
+      </Box>
+    </>
   );
 }
 

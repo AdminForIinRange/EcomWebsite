@@ -1,6 +1,6 @@
 import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
-
+import HeadphoneYellow from "../../../assets/ProductBanner/HeadphoneYellow.png"
 export default function SmallScreenProductBoard() {
   const responsiveHeading = ["3xl", "3xl", "3xl", "4xl", "4xl"];
   const responsiveSubheading = ["lg", "xl", "xl", "2xl", "2xl"];
@@ -42,37 +42,77 @@ export default function SmallScreenProductBoard() {
       src: "https://source.unsplash.com/a-black-and-white-video-game-controller-VVBjk060DdY",
     },
   ];
-
   const FeaturedAdvertBannerOne = [
     {
       src: "https://source.unsplash.com/woman-wearing-blue-denim-shorts-watching-the-body-of-water-CYrXeFH2KBw",
+      header: "Get The best Tech",
+      subheading: "Unveiling the Latest trendy tech" 
     },
-    { header: "Get The best Tech" },
-    { subheading: "Unveiling the Latest trendy tech" },
+   
+    { src: "https://source.unsplash.com/flatlay-photography-of-wireless-headphones-PDX_a_82obo",
+    header: "Featured Porducts",
+    subheading: "Discover the Best with Our Featured Product!"  },
   ];
 
   return (
 
       <VStack >
 
-<VStack align={"center"} justify={"center"} mb={"50px"}>
-              <Text
-                
-                fontSize={responsiveHeading}
-                fontFamily={"Raleway"}
-                fontWeight={"700"}
-              >
-                Featured Porducts
-              </Text>
-              <Text
-                
-                fontSize={responsiveSubheading}
-                fontFamily={"Raleway"}
-              >
-                Discover the Best with Our Featured Product!
-              </Text>
-            </VStack>
-        <HStack
+<HStack
+                  gap={"20px"}
+                  align={"start"}
+                  justify={"center"}
+                  w={"100%"}
+                  h={"100%"}
+                >
+                  <Box
+                    p={"2.5"}
+                    bgColor={"#F6F6F6"}
+                    w={"100%"}
+                    h={"100%"}
+                    rounded={"xl"}
+                  >
+                    <Box
+                      mt={"15px"}
+                      w={"100%"}
+                      h={"300px"}
+                      rounded={"2xl"}
+                      bgSize={"cover"}
+                      bgImage={HeadphoneYellow}
+                      bgPos={"center"}
+                      bgRepeat={"no-repeat"}
+                      p={"1%"}
+                  
+                      justifyContent={"end"}
+                      alignItems={"end"}
+                    >
+                      <VStack
+                        w={"100%"}
+                        h={"100%"}
+                        align={"left"}
+                        justify={"end"}
+                      >
+                        <Text
+                          textAlign={""}
+                          fontSize={responsiveHeading}
+                          fontFamily={"Raleway"}
+                          fontWeight={"700"}
+                        >
+                          {FeaturedAdvertBannerOne[1].subheading}
+                        </Text>
+                        <Text
+                          fontSize={responsiveSubheading}
+                          fontFamily={"Raleway"}
+                        >
+                         {FeaturedAdvertBannerOne[1].subheading}
+                        </Text>
+                      </VStack>
+                    </Box>
+                  </Box>
+                </HStack>
+
+
+        <HStack mt={"100px"}
           gap={"20px"}
           align={"start"}
           flexWrap={["wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
@@ -80,13 +120,15 @@ export default function SmallScreenProductBoard() {
           w={"100%"}
           h={"100%"}
         >
+               
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={["340px", "340px", "340px", "400px", "400px"]}
+            w={"100%"}
             h={"100%"}
             rounded={"xl"}
           >
+             
            
             <Text fontSize={responsiveProductHading} fontWeight={"600"}>
               {Frontproducts[0].product}
@@ -110,7 +152,7 @@ export default function SmallScreenProductBoard() {
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={["340px", "340px", "340px", "400px", "400px"]}
+            w={"100%"}
             h={"100%"}
             rounded={"xl"}
           >
@@ -143,7 +185,7 @@ export default function SmallScreenProductBoard() {
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={["340px", "700px", "700px", "700px", "400px"]}
+            w={"100%"}
             h={"100%"}
             rounded={"xl"}
           >
@@ -177,7 +219,7 @@ export default function SmallScreenProductBoard() {
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={["340px", "340px", "340px", "400px", "400px"]}
+            w={"100%"}
             h={"100%"}
             rounded={"xl"}
           >
@@ -202,7 +244,7 @@ export default function SmallScreenProductBoard() {
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={["340px", "340px", "340px", "400px", "400px"]}
+            w={"100%"}
             h={"100%"}
             rounded={"xl"}
           >

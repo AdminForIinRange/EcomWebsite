@@ -2,8 +2,8 @@ import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 
 export default function IphoneScreen() {
-  const responsiveHeading = ["2xl", "3xl", "3xl", "4xl", "4xl"];
-  const responsiveSubheading = ["md", "xl", "xl", "2xl", "2xl"];
+  const responsiveHeading = ["sm", "3xl", "3xl", "4xl", "4xl"];
+  const responsiveSubheading = ["2xs", "xl", "xl", "2xl", "2xl"];
 
   const responsiveProductHading = ["2xs", "lg", "xl", "xl", "xl"];
   const responsiveProductSubheading = ["xs", "12px", "sm", "sm", "sm"];
@@ -41,19 +41,41 @@ export default function IphoneScreen() {
       description: "Remote monitoring for home safety.",
       src: "https://source.unsplash.com/a-black-and-white-video-game-controller-VVBjk060DdY",
     },
+    {
+        product: "Smart home security camera",
+        description: "Remote monitoring for home safety.",
+        src: "https://source.unsplash.com/a-black-and-white-video-game-controller-VVBjk060DdY",
+      },
   ];
 
   const FeaturedAdvertBannerOne = [
     {
       src: "https://source.unsplash.com/woman-wearing-blue-denim-shorts-watching-the-body-of-water-CYrXeFH2KBw",
+      header: "Get The best Tech",
+      subheading: "Unveiling the Latest trendy tech" 
     },
-    { header: "Get The best Tech" },
-    { subheading: "Unveiling the Latest trendy tech" },
+   
+    { src: "https://source.unsplash.com/flatlay-photography-of-wireless-headphones-PDX_a_82obo",
+    header: "Featured Porducts",
+    subheading: "Discover the Best with Our Featured Product!"  },
   ];
 
   return (
-    <VStack>
-      <VStack align={"center"} justify={"center"} mb={"20px"}>
+<>
+  
+      <HStack rounded={"md"} bgColor={"gray.200"}
+        align={"start"}
+        flexWrap={["nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
+        justify={"center"}
+        w={"100%"}
+        h={"100%"}
+        py={"1%"}
+        mt={"50px"}
+
+      >
+        <Box p={"1.5"} w={"150px"} h={"100%"} rounded={"xl"}>
+
+        <Box position={"absolute"} top={"100px"}>
         <Text
           fontSize={responsiveHeading}
           fontFamily={"Raleway"}
@@ -64,16 +86,7 @@ export default function IphoneScreen() {
         <Text fontSize={responsiveSubheading} fontFamily={"Raleway"}>
           Discover the Best with Our Featured Product!
         </Text>
-      </VStack>
-      <HStack rounded={"md"} bgColor={"gray.200"}
-        align={"start"}
-        flexWrap={["nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
-        justify={"center"}
-        w={"100%"}
-        h={"100%"}
-        py={"1%"}
-      >
-        <Box p={"1.5"} w={"150px"} h={"100%"} rounded={"xl"}>
+      </Box>
           <Text fontSize={responsiveProductHading} fontWeight={"600"}>
             {Frontproducts[0].product}
           </Text>
@@ -126,7 +139,7 @@ export default function IphoneScreen() {
         </Box>
       </HStack>
 
-      <HStack
+      <HStack mt={"10px"}
       bgColor={"gray.200"}
       rounded={"md"}
         align={"start"}
@@ -180,7 +193,8 @@ export default function IphoneScreen() {
           ></Box>
         </Box>
       </HStack>
-    </VStack>
+      </>
+    
   );
 }
 
