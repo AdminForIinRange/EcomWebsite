@@ -27,7 +27,7 @@ export default function IphoneScreen({
       >
         <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-            {Frontproducts[0].product}
+            {Frontproducts[2].product}
           </Text>
 
           <Box
@@ -36,7 +36,7 @@ export default function IphoneScreen({
             h={"100px"}
             rounded={"2xl"}
             bgSize={"cover"}
-            bgImage={"url(" + Frontproducts[0].src + ")"}
+            bgImage={"url(" + Frontproducts[2].srcTwo + ")"}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
           ></Box>
@@ -61,7 +61,7 @@ export default function IphoneScreen({
 
         <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-            {Frontproducts[2].product}
+            {Frontproducts[8].product}
           </Text>
 
           <Box
@@ -70,7 +70,7 @@ export default function IphoneScreen({
             h={"100px"}
             rounded={"2xl"}
             bgSize={"cover"}
-            bgImage={"url(" + Frontproducts[2].src + ")"}
+            bgImage={"url(" + Frontproducts[8].src + ")"}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
           ></Box>
@@ -88,7 +88,7 @@ export default function IphoneScreen({
         h={"100%"}
      
       >
-        {/* <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
+        <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
             {Frontproducts[3].product}
           </Text>
@@ -119,7 +119,7 @@ export default function IphoneScreen({
             bgPos={"center "}
             bgRepeat={"no-repeat"}
           ></Box>
-        </Box> */}
+        </Box>
 
 
         <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>

@@ -26,24 +26,6 @@ export default function SmallScreenProductBoard({
       >
 
         
-        <Box p={"2"} bgColor={Frontproducts[0].theme} w={"100%"} h={"100%"} rounded={"xl"}>
-          <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-            {Frontproducts[0].product}
-          </Text>
-         
-
-          <Box
-            mt={"5px"}
-            w={"100%"}
-            h={"150px"}
-            rounded={"2xl"}
-            bgSize={"cover"}
-            bgImage={"url(" + Frontproducts[0].src + ")"}
-            bgPos={"center"}
-            bgRepeat={"no-repeat"}
-          ></Box>
-        </Box>
-
         <Box p={"2"} bgColor={Frontproducts[7].theme} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
             {Frontproducts[7].product}
@@ -57,6 +39,24 @@ export default function SmallScreenProductBoard({
             rounded={"2xl"}
             bgSize={"cover"}
             bgImage={"url(" + Frontproducts[7].src + ")"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
+          ></Box>
+        </Box>
+
+        <Box p={"2"} bgColor={Frontproducts[6].theme} w={"100%"} h={"100%"} rounded={"xl"}>
+          <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+            {Frontproducts[6].product}
+          </Text>
+         
+
+          <Box
+            mt={"5px"}
+            w={"100%"}
+            h={"150px"}
+            rounded={"2xl"}
+            bgSize={"cover"}
+            bgImage={"url(" + Frontproducts[6].src + ")"}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
           ></Box>
@@ -88,9 +88,9 @@ export default function SmallScreenProductBoard({
         w={"100%"}
         h={"100%"}
       >
-              <Box p={"2"}    bgColor={Frontproducts[2].theme} w={"100%"} h={"100%"} rounded={"xl"}>
+              <Box p={"2"}    bgColor={Frontproducts[8].theme} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-            {Frontproducts[2].product}
+            {Frontproducts[8].product}
           </Text>
           
           <Box
@@ -100,7 +100,7 @@ export default function SmallScreenProductBoard({
             h={"100px"}
             rounded={"2xl"}
             bgSize={"cover"}
-            bgImage={"url(" + Frontproducts[2].src + ")"}
+            bgImage={"url(" + Frontproducts[8].src + ")"}
             bgPos={"center "}
             bgRepeat={"no-repeat"}
           ></Box>

@@ -88,7 +88,7 @@ export default function ProductBoard() {
                     bgRepeat={"no-repeat"}
                   ></Box>
                 </Box>
-                {/* <Box
+                <Box
                   p={"2.5"}
                   bgColor={Frontproducts[8].theme}
                   w={"100%"}
@@ -113,7 +113,7 @@ export default function ProductBoard() {
                     bgPos={"center"}
                     bgRepeat={"no-repeat"}
                   ></Box>
-                </Box> */}
+                </Box>
 
 
                 <Box
@@ -154,6 +154,8 @@ export default function ProductBoard() {
                   <Text fontSize={responsiveProductSubheading}>
                     {Frontproducts[2].description}
                   </Text>
+
+                  <HStack>
                   <Box
                     mt={"15px"}
                     w={"100%"}
@@ -164,6 +166,20 @@ export default function ProductBoard() {
                     bgPos={"center"}
                     bgRepeat={"no-repeat"}
                   ></Box>
+                   <Box
+                    mt={"15px"}
+                    w={"100%"}
+                    h={"150px"}
+                    rounded={"2xl"}
+                    bgSize={"cover"}
+                    bgImage={"url(" + Frontproducts[2].srcTwo + ")"}
+                    bgPos={"center"}
+                    bgRepeat={"no-repeat"}
+                  ></Box>
+
+                  </HStack>
+                 
+                  
                 </Box>
               </HStack>
 
@@ -229,7 +245,7 @@ export default function ProductBoard() {
                   ></Box>
                 </Box>
 
-                {/* <Box
+                <Box
                   p={"2.5"}
                   bgColor={Frontproducts[5].theme}
                   w={"100%"}
@@ -300,7 +316,7 @@ export default function ProductBoard() {
                    backgroundPosition={"center"}
                     bgRepeat={"no-repeat"}
                   ></Box>
-                </Box> */}
+                </Box>
               </HStack>
             </VStack>
           )}{" "}
