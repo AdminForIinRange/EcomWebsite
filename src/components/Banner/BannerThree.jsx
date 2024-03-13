@@ -8,15 +8,13 @@ import {
   responsiveProductHeading,
   responsiveBanner,
   responsiveBannerHeading2,
-  responsiveParagraph
-
+  responsiveParagraph,
 } from "../../data/GlobalPresets/Presets";
 import banner from "../../data/Banner/banner.json";
 import SeeMoreBtn from "../Buttons/SeeMoreBtn";
-import GirlOnAhill from "../../assets/ProductBanner/FasionBanner.png"
-export default function BannerTwo() {
-
-  const { FeaturedAdvertBanner } = banner
+import PeopleWokingBanner from "../../assets/ProductBanner/PeopleWokingBanner.png";
+export default function BannerThree() {
+  const { FeaturedAdvertBanner, TechnologyBanner } = banner;
   return (
     <HStack
       align={"start"}
@@ -25,20 +23,22 @@ export default function BannerTwo() {
       h={"100%"}
       py={"15px"}
     >
-      <Box w={"100%"} h={"100%"} >
+      <Box w={"100%"} h={"100%"}>
         <Box
-   
           w={"100%"}
           h={responsiveBanner}
-         
           bgSize={"cover"}
-          bgImage={GirlOnAhill}
-          bgPos={["bottom right", " bottom right", "center", "center", "center"]}
+          bgImage={PeopleWokingBanner}
+          bgPos={[
+            "bottom right",
+            " bottom right",
+            "center",
+            "center",
+            "center",
+          ]}
           bgRepeat={"no-repeat"}
-          
           justifyContent={"end"}
           alignItems={"end"}
-          
         >
           <VStack
             color={"black"}
@@ -46,26 +46,26 @@ export default function BannerTwo() {
             h={"100%"}
             align={"left"}
             justify={"top"}
-            bgColor={"wheat"}
+            bgColor={"gray.200"}
             p={"1%"}
-            
-          
           >
             <Text
-
               fontSize={responsiveBannerHeading2}
               fontFamily={"Raleway"}
               fontWeight={"700"}
             >
-              {FeaturedAdvertBanner[0].header}
+              {TechnologyBanner[0].header}
             </Text>
             <Text fontSize={responsiveParagraph} fontFamily={"Raleway"}>
-              {FeaturedAdvertBanner[0].subheading}
+              {TechnologyBanner[0].subheading}
             </Text>
-            <HStack   justify={"top"} align={"end"} h={["20%", "40%", "100%", "100%", "100%"]}>
-            <SeeMoreBtn />
+            <HStack
+              justify={"top"}
+              align={"end"}
+              h={["20%", "40%", "100%", "100%", "100%"]}
+            >
+              <SeeMoreBtn />
             </HStack>
-          
           </VStack>
         </Box>
       </Box>

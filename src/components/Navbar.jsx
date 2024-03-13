@@ -19,7 +19,7 @@ export default function Navbar() {
   const isSmallScreen = useBreakpointValue({ base: true, md: false });
 
   return (
-    <HStack fontFamily={"Raleway"} h={"70px"} w={"100%"} justify={"center"} align={"center"}>
+    <HStack fontFamily={"Raleway"} h={"60px"} w={"100%"} justify={"center"} align={"center"}>
       <Text fontSize={"40px"} mr={{ base: "0px", md: "40px" }}>
         🦑
       </Text>
