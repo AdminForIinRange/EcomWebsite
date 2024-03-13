@@ -1,0 +1,54 @@
+{
+    "Frontproducts": [
+      {
+        "product": "Smart thermostat",
+        "description": "energy-saving temperature control.",
+        "src": "https://source.unsplash.com/gold-apple-iphone-smartphone-held-at-the-door-IJkSskfEqrM",
+        "theme":"#E2E8F0"
+
+        
+      },
+      {
+        "product": "Wireless earbuds",
+        "description": "Cord-free music and call convenience.",
+        "src": "https://source.unsplash.com/white-and-black-apple-ceramic-mug-k6zPpoQhVX0",
+        "theme": "#76E4F7"
+      },
+      {
+        "product": "Robot vacuum cleaner",
+        "description": "Automated floor cleaning with precision.",
+        "src": "https://source.unsplash.com/grayscale-photo-of-round-frame-on-wooden-floor-znfc7DF7M7U",
+        "theme": "#CBD5E0"
+      },
+      {
+        "product": "Fitness tracker",
+        "description": "Activity monitoring for health goals.",
+        "src": " https://source.unsplash.com/person-clicking-apple-watch-smartwatch-rCOWMC8qf8A",
+        "theme":"#d2b48c"
+      },
+      {
+        "product": "home security camera",
+        "description": "Remote monitoring for home safety.",
+        "src": "https://source.unsplash.com/a-black-and-white-video-game-controller-VVBjk060DdY"
+        ,
+        "theme":"#63B3ED"
+      }
+    ],
+    "FeaturedAdvertBannerOne": [
+      {
+        "src": "https://source.unsplash.com/woman-wearing-blue-denim-shorts-watching-the-body-of-water-CYrXeFH2KBw",
+        "header": "Get The best Tech",
+        "subheading": "Unveiling the Latest trendy tech"
+        
+      
+      },
+      {
+        "src": "https://source.unsplash.com/flatlay-photography-of-wireless-headphones-PDX_a_82obo",
+        "header": "Featured Porducts",
+        "subheading": "Discover the Best with Our Featured Product!"
+        
+       
+      }
+    ]
+  }
+  
