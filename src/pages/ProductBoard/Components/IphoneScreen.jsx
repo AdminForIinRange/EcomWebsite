@@ -1,14 +1,14 @@
 import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import HeadphoneYellow from "../../../assets/ProductBanner/HeadphoneYellow.png";
-export default function IphoneScreen({ FeaturedAdvertBannerOne,
+export default function IphoneScreen({ 
   Frontproducts,
-  responsiveTitleBanner,
-  responsiveHeading,
-  responsiveSubheading,
+  
+  
+
   responsiveProductHeading,
-  responsiveProductSubheading,
-  responsiveTextAlignment,}) {
+  
+  }) {
   
   return (
     <>
@@ -16,14 +16,14 @@ export default function IphoneScreen({ FeaturedAdvertBannerOne,
 
       <HStack
         rounded={"md"}
-        bgColor={Frontproducts[0].theme}
+        bg={"gray.200"}
         align={"start"}
         flexWrap={["nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         justify={"center"}
         w={"100%"}
         h={"100%"}
-        py={"1%"}
-        mt={"10px"}
+     
+      
       >
         <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
@@ -79,18 +79,34 @@ export default function IphoneScreen({ FeaturedAdvertBannerOne,
 
       <HStack
         mt={"10px"}
-        bgColor={Frontproducts[0].theme}
+      bg={"gray.200"}
         rounded={"md"}
         align={"start"}
         flexWrap={["nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         justify={"center"}
         w={"100%"}
         h={"100%"}
-        py={"2%"}
+     
       >
-        <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
+        {/* <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
             {Frontproducts[3].product}
+          </Text>
+
+          <Box
+            mt={"5px"}
+            w={"100%"}
+            h={"70px"}
+            rounded={"2xl"}
+            bgSize={"cover"}
+            bgImage={"url(" + Frontproducts[7].src + ")"}
+            bgPos={"center "}
+            bgRepeat={"no-repeat"}
+          ></Box>
+        </Box>
+        <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
+          <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+            {Frontproducts[7].product}
           </Text>
 
           <Box
@@ -103,7 +119,8 @@ export default function IphoneScreen({ FeaturedAdvertBannerOne,
             bgPos={"center "}
             bgRepeat={"no-repeat"}
           ></Box>
-        </Box>
+        </Box> */}
+
 
         <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>

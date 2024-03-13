@@ -1,14 +1,14 @@
 import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 
-export default function SmallScreenProductBoard({ FeaturedAdvertBannerOne,
+export default function SmallScreenProductBoard({ 
   Frontproducts,
-  responsiveTitleBanner,
-  responsiveHeading,
-  responsiveSubheading,
+  
+  
+  
   responsiveProductHeading,
-  responsiveProductSubheading,
-  responsiveTextAlignment,}) {
+  
+  }) {
   
 
   return (
@@ -43,6 +43,25 @@ export default function SmallScreenProductBoard({ FeaturedAdvertBannerOne,
             bgRepeat={"no-repeat"}
           ></Box>
         </Box>
+
+        <Box p={"2"} bgColor={Frontproducts[7].theme} w={"100%"} h={"100%"} rounded={"xl"}>
+          <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+            {Frontproducts[7].product}
+          </Text>
+         
+
+          <Box
+            mt={"5px"}
+            w={"100%"}
+            h={"150px"}
+            rounded={"2xl"}
+            bgSize={"cover"}
+            bgImage={"url(" + Frontproducts[7].src + ")"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
+          ></Box>
+        </Box>
+
 
         <Box p={"2"} bgColor={Frontproducts[1].theme} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
@@ -122,16 +141,7 @@ export default function SmallScreenProductBoard({ FeaturedAdvertBannerOne,
         </Box>
       </HStack>
 
-      <HStack
-        gap={"20px"}
-        align={"start"}
-        flexWrap={["wrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
-        justify={"center"}
-        w={"100%"}
-        h={"100%"}
-      >
-       
-      </HStack>
+  
     </VStack>
   );
 }

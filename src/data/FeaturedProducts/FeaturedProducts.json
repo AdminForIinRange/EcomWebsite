@@ -29,26 +29,10 @@
       {
         "product": "home security camera",
         "description": "Remote monitoring for home safety.",
-        "src": "https://source.unsplash.com/a-black-and-white-video-game-controller-VVBjk060DdY"
-        ,
+        "src": "https://source.unsplash.com/a-black-and-white-video-game-controller-VVBjk060DdY",
         "theme":"#63B3ED"
       }
-    ],
-    "FeaturedAdvertBannerOne": [
-      {
-        "src": "https://source.unsplash.com/woman-wearing-blue-denim-shorts-watching-the-body-of-water-CYrXeFH2KBw",
-        "header": "Get The best Tech",
-        "subheading": "Unveiling the Latest trendy tech"
-        
-      
-      },
-      {
-        "src": "https://source.unsplash.com/flatlay-photography-of-wireless-headphones-PDX_a_82obo",
-        "header": "Featured Porducts",
-        "subheading": "Discover the Best with Our Featured Product!"
-        
-       
-      }
     ]
+    
   }
   
