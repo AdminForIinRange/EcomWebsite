@@ -33,7 +33,7 @@ export default function BannerTwo() {
          
           bgSize={"cover"}
           bgImage={GirlOnAhill}
-          bgPos={"bottom"}
+          bgPos={"center"}
           bgRepeat={"no-repeat"}
           
           justifyContent={"end"}

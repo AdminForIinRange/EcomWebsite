@@ -17,16 +17,15 @@ const theme = extendTheme({
       html: {
         height: "100%",
         width: "100%",
-        overflowX: "hidden",
-        overflowY: "auto",
+        
+       
 
       },
       body: {
        
         height: "100%",
         width: "100%",
-        overflowX: "hidden", // Hide horizontal scrollbar
-        overflowY: "auto",   // Show vertical scrollbar when needed
+       
       },
     },
   },

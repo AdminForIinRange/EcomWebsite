@@ -25,5 +25,5 @@ export const responsiveSubheading = ["sm", "md", "xl", "2xl", "2xl"];
 
 export const responsiveProductHeading = ["2xs", "xs", "sm", "lg", "lg"];
 
-export const responsiveProductSubheading = ["xs", "sm", "sm", "12px", "sm"];
+export const responsiveProductSubheading = ["2xs", "xs", "12px", "12px", "sm"];
 export const responsiveTextAlignment = ["center", "center", "inherit", "inherit", "inherit"];
