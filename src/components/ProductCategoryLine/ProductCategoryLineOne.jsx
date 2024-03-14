@@ -29,7 +29,7 @@ export default function ProductCategoryLineOne() {
   return (
     <>
       <HStack align={"start"} py={"15px"} w={"100%"} h={"100%"}>
-        <ProductCategoryBox Theme={"#E2E8F0"} >
+        <ProductCategoryBox Theme={"#E2E8F0"}  >
           <Text
             fontSize={responsiveBannerHeading2}
             fontFamily={"Raleway"}
@@ -44,7 +44,7 @@ export default function ProductCategoryLineOne() {
 
         <ProductLine>
           {TechnologyCategory.map((item, index) => (
-            <VStack key={index} justify={"left"} align={"left"}>
+            <VStack  key={index} justify={"left"} align={"left"} mb={["10px", "10px", "20px", "20px", "20px"]}>
               <Box
                 rounded={"md"}
                 w={["100px", "150px", "250px", "250px", "250px"]}

@@ -11,7 +11,8 @@ export default function ProductLine({ children }) {
 
 
   return (
-    <HStack
+    <HStack 
+    id="style-1"
           align={"start"}
           w={"100%"}
           h={"100%"}
