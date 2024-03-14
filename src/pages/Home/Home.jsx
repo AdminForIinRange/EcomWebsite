@@ -6,7 +6,6 @@ import BannerTwo from '../../components/Banner/BannerTwo'
 import BannerThree from '../../components/Banner/BannerThree.jsx'
 import ProductCategoryLineOne from '../../components/ProductCategoryLine/ProductCategoryLineOne.jsx'
 import ProductCategoryLineTwo from '../../components/ProductCategoryLine/ProductCategoryLineTwo.jsx'
-import ProductCategory from '../../components/ProductCategoryLine/ProductCategory.jsx'
 
 
 export default function Home() {
