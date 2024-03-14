@@ -53,7 +53,7 @@ export default function ProductBoard() {
               }
             </>
           ) : (
-            <VStack>
+            <>
               <HStack
                
                 align={"start"}
@@ -318,7 +318,7 @@ export default function ProductBoard() {
                   ></Box>
                 </Box>
               </HStack>
-            </VStack>
+            </>
           )}{" "}
         </>
       )}

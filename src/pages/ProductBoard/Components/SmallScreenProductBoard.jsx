@@ -12,7 +12,7 @@ export default function SmallScreenProductBoard({
   
 
   return (
-    <VStack>
+    <>
   
 
       <HStack
@@ -142,7 +142,7 @@ export default function SmallScreenProductBoard({
       </HStack>
 
   
-    </VStack>
+    </>
   );
 }
 

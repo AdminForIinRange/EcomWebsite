@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductBoard from '../ProductBoard/ProductBoard'
 import TitleBanner from '../../components/Banner/TitleBanner'
-import { Box } from '@chakra-ui/react'
+import { Box, VStack } from '@chakra-ui/react'
 import BannerTwo from '../../components/Banner/BannerTwo'
 import BannerThree from '../../components/Banner/BannerThree.jsx'
 import ProductCategoryLineOne from '../../components/ProductCategoryLine/ProductCategoryLineOne.jsx'
@@ -10,7 +10,7 @@ import ProductCategoryLineTwo from '../../components/ProductCategoryLine/Product
 
 export default function Home() {
   return (
-    <Box px={["1%","1%","2%","3%","3%"]}>
+    <VStack px={["1%","1%","2%","3%","3%"]} gap={"10px"} >  {/* The elemnets are too close, please review amozon web straturs  */} 
     <TitleBanner />
       <ProductBoard />
       <BannerTwo />
@@ -18,6 +18,6 @@ export default function Home() {
       <BannerThree />
       <ProductCategoryLineOne />
 
-    </Box>
+    </VStack>
   )
 }
