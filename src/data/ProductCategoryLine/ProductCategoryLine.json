@@ -110,86 +110,74 @@
 
   "WomenFashionCategory": [
     {
-      "product": "Oculus VR Headset",
-      "description": "Immersive virtual reality experience.",
-      "src": "https://source.unsplash.com/woman-in-black-sweater-holding-white-and-black-vr-goggles-8vn4KvfU640",
-      "theme": "#E2E8F0",
-      "price": "$299.99",
-      "oldPrice": "$399.99"
+      "product": "Floral Midi Dress",
+      "description": "Elegant and feminine floral print dress for summer.",
+      "src": "https://source.unsplash.com/random/600x400?dress",
+      "theme": "#F0D9ED",
+      "price": "$59.99"
     },
     {
-      "product": "Wireless earbuds",
-      "description": "Cord-free music.",
-      "src": "https://source.unsplash.com/white-and-black-apple-ceramic-mug-k6zPpoQhVX0",
-      "theme": "#76E4F7",
-      "price": "$299.99",
-      "oldPrice": "$399.99"
+      "product": "Leather Tote Bag",
+      "description": "Spacious and stylish tote bag for work or travel.",
+      "src": "https://source.unsplash.com/random/600x400?bag",
+      "theme": "#D6B9C2",
+      "price": "$89.99"
     },
     {
-      "product": "Robot vacuum cleaner",
-      "description": "cleaning with precision.",
-      "src": "https://source.unsplash.com/grayscale-photo-of-round-frame-on-wooden-floor-znfc7DF7M7U",
-      "srcTwo": "https://source.unsplash.com/a-white-robot-vacuum-sitting-on-top-of-a-wooden-floor-eb4e-PVDhWY",
-      "theme": "#CBD5E0",
-      "price": "$299.99",
-      "oldPrice": "$399.99"
+      "product": "High-Waisted Jeans",
+      "description": "Trendy and flattering high-waisted denim jeans.",
+      "src": "https://source.unsplash.com/random/600x400?jeans",
+      "theme": "#B9C1D6",
+      "price": "$79.99"
     },
     {
-      "product": "Fitness tracker",
-      "description": "Your Fitness Buddy.",
-      "src": " https://source.unsplash.com/person-clicking-apple-watch-smartwatch-rCOWMC8qf8A",
-      "theme": "#F1D2B7",
-      "price": "$299.99",
-      "oldPrice": "$399.99"
+      "product": "Silk Blouse",
+      "description": "Luxurious silk blouse for a sophisticated look.",
+      "src": "https://source.unsplash.com/random/600x400?blouse",
+      "theme": "#F0E3D6",
+      "price": "$89.99"
     },
     {
-      "product": "home camera",
-      "description": " monitor your safety.",
-      "src": "https://source.unsplash.com/a-black-and-white-video-game-controller-VVBjk060DdY",
-      "theme": "#63B3ED",
-      "price": "$299.99",
-      "oldPrice": "$399.99"
-    },
-
-    {
-      "product": "DSLR Camera",
-      "description": "Capture moments.",
-      "src": "https://source.unsplash.com/person-holding-black-dslr-camera-I5g5q6qLuUs",
-      "theme": "#f25aa9",
-      "price": "$299.99",
-      "oldPrice": "$399.99"
+      "product": "Ankle Strap Heels",
+      "description": "Elegant and stylish ankle strap heels for any occasion.",
+      "src": "https://source.unsplash.com/random/600x400?heels",
+      "theme": "#E6C9B9",
+      "price": "$99.99"
     },
     {
-      "product": "Si Giorgio Armani",
-      "description": "Smell Luxury.",
-      "src": "https://source.unsplash.com/pink-nail-polish-7BL7oWcWKWo",
-      "theme": "#FFC6F3",
-      "price": "$299.99",
-      "oldPrice": "$399.99"
+      "product": "Lace Camisole",
+      "description": "Delicate lace camisole for a feminine touch.",
+      "src": "https://source.unsplash.com/random/600x400?camisole",
+      "theme": "#F0E8E6",
+      "price": "$39.99"
     },
     {
-      "product": "GameBoy",
-      "description": "Fun Gadgets.",
-      "src": "https://source.unsplash.com/white-and-black-nintendo-game-boy-color-on-yellow-surface-v8XaVfyo41Q",
-      "theme": "#FAF089",
-      "price": "$299.99",
-      "oldPrice": "$399.99"
+      "product": "Denim Jacket",
+      "description": "Versatile and trendy denim jacket for any outfit.",
+      "src": "https://source.unsplash.com/random/600x400?denim,jacket",
+      "theme": "#A9BCD0",
+      "price": "$79.99"
     },
     {
-      "product": "Jade Roller",
-      "description": "Smooth and Refined.",
-      "src": " https://source.unsplash.com/gray-and-black-spoon-in-persons-hand-Q0y-1aorvJo",
-      "theme": "#9AE6B4",
-      "price": "$299.99",
-      "oldPrice": "$399.99"
+      "product": "Maxi Skirt",
+      "description": "Flowy and comfortable maxi skirt for a bohemian look.",
+      "src": "https://source.unsplash.com/random/600x400?skirt",
+      "theme": "#F8D9B3",
+      "price": "$49.99"
     },
     {
-      "product": "home camera",
-      "description": " monitor your safety.",
-      "src": "https://source.unsplash.com/a-black-and-white-video-game-controller-VVBjk060DdY",
-      "theme": "#63B3ED",
-      "price": "$299.99",
-      "oldPrice": "$399.99"
+      "product": "Oversized Sweater",
+      "description": "Cozy and stylish oversized sweater for cooler days.",
+      "src": "https://source.unsplash.com/random/600x400?sweater",
+      "theme": "#D4C2B9",
+      "price": "$69.99"
+    },
+    {
+      "product": "Faux Leather Jacket",
+      "description": "Edgy and versatile faux leather jacket for a bold look.",
+      "src": "https://source.unsplash.com/random/600x400?jacket",
+      "theme": "#A7A7A7",
+      "price": "$89.99"
     }
   ]
 }
