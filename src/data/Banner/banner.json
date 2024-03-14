@@ -1,37 +1,30 @@
 {
+  "FeaturedAdvertBanner": [
+    {
+     
 
-    "FeaturedAdvertBanner": [
-        {
-          "src": "https://source.unsplash.com/woman-wearing-blue-denim-shorts-watching-the-body-of-water-CYrXeFH2KBw",
-          "header": "Newest fashion trends",
-          "subheading": "Unveiling the Latest in Fashion"
-          
-        
-        },
-        {
-          "src": "https://source.unsplash.com/flatlay-photography-of-wireless-headphones-PDX_a_82obo",
-          "header": "Featured Porducts",
-          "subheading": "Discover the Best with Our Featured Product!"
-          
-         
-        },
-        {
-         
-        }
-      ]
-,
-
-      "TechnologyBanner": [
-        {
-         
-            
-              "header": "Cool Tech-trends",
-              "subheading": "Discover Must-Have Gadgets "
-            
-          
-        }
-      ]
+      "header": "Squidgy",
+      "subheading": "We are Amazing"
+    },
+    {
+     
+      "header": "Featured Porducts",
+      "subheading": "Discover the Best with Our Featured Product!"
+    }
     
     
+  ],
+  "WomenFashionBanner": [
+    {
+      "header": "Newest fashion trends",
+      "subheading": "Unveiling the Latest in Fashion"
+    }
+  ],
 
+  "TechnologyBanner": [
+    {
+      "header": "Cool Tech-trends",
+      "subheading": "Discover Must-Have Gadgets "
+    }
+  ]
 }

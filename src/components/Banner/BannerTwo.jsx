@@ -16,7 +16,7 @@ import SeeMoreBtn from "../Buttons/SeeMoreBtn";
 import GirlOnAhill from "../../assets/ProductBanner/FasionBanner.png"
 export default function BannerTwo() {
 
-  const { FeaturedAdvertBanner } = banner
+  const { WomenFashionBanner } = banner
   return (
     <HStack
       align={"start"}
@@ -57,10 +57,10 @@ export default function BannerTwo() {
               fontFamily={"Raleway"}
               fontWeight={"700"}
             >
-              {FeaturedAdvertBanner[0].header}
+              {WomenFashionBanner[0].header}
             </Text>
             <Text fontSize={responsiveParagraph} fontFamily={"Raleway"}>
-              {FeaturedAdvertBanner[0].subheading}
+              {WomenFashionBanner[0].subheading}
             </Text>
             <HStack   justify={"top"} align={"end"} h={["20%", "40%", "100%", "100%", "100%"]}>
             <SeeMoreBtn />

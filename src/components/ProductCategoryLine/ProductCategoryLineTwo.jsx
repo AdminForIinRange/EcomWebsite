@@ -29,10 +29,10 @@ export default function ProductCategoryLineOne() {
   const { FeaturedAdvertBanner } = banner;
   const isSmallScreen = useBreakpointValue({ base: true, lg: false });
 
-  const { TechnologyCategory, CategoryBox } = ProductCategoryLine;
+  const { WomenFashionCategory, CategoryBox } = ProductCategoryLine;
   return (
     <HStack align={"start"} py={"15px"} w={"100%"} h={"100%"}>
-      <ProductCategoryBox Theme={"#E2E8F0"}> 
+      <ProductCategoryBox Theme={"#F5DEB3"}> 
         <Text
           fontSize={responsiveBannerHeading2}
           fontFamily={"Raleway"}
@@ -46,7 +46,7 @@ export default function ProductCategoryLineOne() {
       </ProductCategoryBox>
 
       <ProductLine>
-        {TechnologyCategory.map((item, index) => (
+        {WomenFashionCategory.map((item, index) => (
           <VStack key={index} justify={"left"} align={"left"} mb={["10px", "10px", "20px", "20px", "20px"]}>
             <Box
               rounded={"md"}
