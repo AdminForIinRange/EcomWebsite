@@ -47,7 +47,7 @@ export default function ProductCategoryLineOne() {
 
       <ProductLine>
         {TechnologyCategory.map((item, index) => (
-          <VStack key={index} justify={"left"} align={"left"}>
+          <VStack key={index} justify={"left"} align={"left"} mb={["10px", "10px", "20px", "20px", "20px"]}>
             <Box
               rounded={"md"}
               w={["100px", "150px", "250px", "250px", "250px"]}
