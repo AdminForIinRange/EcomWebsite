@@ -24,8 +24,8 @@ export default function TopProductBoard() {
         minH={"100vh"} // Adjusted minH to fill the viewport height
        
         templateColumns={"repeat(5, 1fr)"} // Removed extra space after '1fr'
-        templateRows={"repeat(5, 1fr)"} // Removed extra space after '1fr'
-        gridTemplate={"repeat(5, 1fr)"}
+        templateRows={"repeat(4, 1fr)"} // Removed extra space after '1fr'
+
       >
 
         
@@ -33,7 +33,7 @@ export default function TopProductBoard() {
         w={"100%"}
         h={"100%"}
           gridColumn={["1/6", "1/6", "1/6", "1/6", "1/3"]}
-          gridRow={["1/6", "1/6", "1/6", "1/6", "1/3"]}
+          gridRow={["1/6", "1/6", "1/6", "1/6", "1/2"]}
         >
           <Box
             w={"100%"}
@@ -50,7 +50,7 @@ export default function TopProductBoard() {
         w={"100%"}
         h={"100%"}
           gridColumn={["1/6", "1/6", "1/6", "1/6", "1/3"]}
-          gridRow={["1/6", "1/6", "1/6", "1/6", "3/5"]}
+          gridRow={["1/6", "1/6", "1/6", "1/6", "2/3"]}
         >
           <Box
             w={"100%"}
@@ -62,13 +62,30 @@ export default function TopProductBoard() {
             bgRepeat={"no-repeat"}
           />
         </GridItem>
+        <GridItem
+        w={"100%"}
+        h={"100%"}
+          gridColumn={["1/6", "1/6", "1/6", "1/6", "1/3"]}
+          gridRow={["1/6", "1/6", "1/6", "1/6", "3/4"]}
+        >
+          <Box
+            w={"100%"}
+            h={"100%"}
+            rounded={"2xl"}
+            bgSize={"cover"}
+            bgImage={"url(" + TopProducts[0].src + ")"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
+          />
+        </GridItem>
+
 
 
         <GridItem
         w={"100%"}
         h={"100%"}
           gridColumn={["1/6", "1/6", "1/6", "5/6", "3/5"]}
-          gridRow={["1/6", "1/6", "1/6", "1/6", "1/5"]}
+          gridRow={["1/6", "1/6", "1/6", "1/6", "1/4"]}
         >
           <Box
             w={"100%"}
@@ -83,8 +100,8 @@ export default function TopProductBoard() {
         <GridItem
         w={"100%"}
         h={"100%"}
-          gridColumn={["1/6", "1/6", "1/6", "5/6", "5/6"]}
-          gridRow={["1/6", "1/6", "1/6", "1/6", "1/6"]}
+          gridColumn={["1/6", "1/6", "1/6", "5/6", "5/5"]}
+          gridRow={["1/6", "1/6", "1/6", "1/6", "1/5"]}
         >
           <Box
             w={"100%"}
@@ -102,7 +119,7 @@ export default function TopProductBoard() {
         w={"100%"}
         h={"100%"}
           gridColumn={["1/6", "1/6", "1/6", "5/6", "1/5"]}
-          gridRow={["1/6", "1/6", "1/6", "1/6", "5/5"]}
+          gridRow={["1/6", "1/6", "1/6", "1/6", "4/4"]}
         >
           <Box
             w={"100%"}
