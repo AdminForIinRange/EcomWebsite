@@ -7,6 +7,7 @@ import {
   GridItem,
   useBreakpointValue,
   VStack,
+  HStack,
 } from "@chakra-ui/react";
 import FeaturedProducts from "../../data/FeaturedProducts/FeaturedProducts.json";
 import DiorBagGirl from "../../assets/img/DiorBagGirl.png";
@@ -109,12 +110,49 @@ export default function TopProductBoard() {
               Top Rated
             </Text>
 
-            <VStack w={"100%"}  align={"center"}>
-            <Box w={"100%"} h={"100%"} rounded={"xl"}>
+            <VStack w={"100%"} h={"100%"} align={"center"}>
+              <Box w={"100%"} h={"100%"} rounded={"xl"}>
                 <Box
                   mt={"15px"}
                   w={"100%"}
-                  h={"250px"}
+                  h={"300px"}
+                  rounded={"2xl"}
+                  bgSize={"cover"}
+                  bgImage={"url(" + TopProducts[3].src + ")"}
+                  bgPos={"center "}
+                  bgRepeat={"no-repeat"}
+                ></Box>
+                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                  {TopProducts[3].product}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                  {TopProducts[3].description}
+                </Text>
+              </Box>
+
+              <HStack w={"100%"} h={"100%"}> 
+              <Box w={"100%"} h={"100%"} rounded={"xl"}>
+                <Box
+                  mt={"15px"}
+                  w={"100%"}
+                  h={"200px"}
+                  rounded={"2xl"}
+                  bgSize={"cover"}
+                  bgImage={"url(" + TopProducts[3].src + ")"}
+                  bgPos={"center "}
+                  bgRepeat={"no-repeat"}
+                ></Box>
+                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                  {TopProducts[3].product}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                  {TopProducts[3].description}
+                </Text>
+              </Box> <Box w={"100%"} h={"100%"} rounded={"xl"}>
+                <Box
+                  mt={"15px"}
+                  w={"100%"}
+                  h={"200px"}
                   rounded={"2xl"}
                   bgSize={"cover"}
                   bgImage={"url(" + TopProducts[3].src + ")"}
@@ -132,7 +170,7 @@ export default function TopProductBoard() {
                 <Box
                   mt={"15px"}
                   w={"100%"}
-                  h={"250px"}
+                  h={"200px"}
                   rounded={"2xl"}
                   bgSize={"cover"}
                   bgImage={"url(" + TopProducts[3].src + ")"}
@@ -146,9 +184,10 @@ export default function TopProductBoard() {
                   {TopProducts[3].description}
                 </Text>
               </Box>
-
               
+              </HStack>
             </VStack>
+            
           </Box>
         </GridItem>
         <GridItem
