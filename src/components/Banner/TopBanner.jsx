@@ -5,6 +5,7 @@ import {
   responsiveHeading,
   responsiveSubheading,
   responsiveTitleBanner,
+  responsiveTopBanner
 
 } from "../../data/GlobalPresets/Presets";
 import banner from "../../data/Banner/banner.json";
@@ -19,18 +20,19 @@ export default function TopBanner() {
       justify={"center"}
       w={"100%"}
       h={"100%"}
-      py={"15px"}
+      py={"5px"}
     >
       <Box w={"100%"} h={"100%"} >
         <Box
           w={"100%"}
-          h={responsiveTitleBanner}
+          h={responsiveTopBanner}
           rounded={"2xl"}
           bgSize={"cover"}
           bgImage={ScatterWorkBanner}
           bgPos={"center"}
           bgRepeat={"no-repeat"}
           p={"2%"}
+
           justifyContent={"end"}
           alignItems={"end"}
         >

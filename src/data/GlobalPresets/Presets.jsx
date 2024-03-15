@@ -1,29 +1,88 @@
 
+/**
+ * This file contains the global presets for the responsive design.
+ *
+ * These presets are used to define the responsive styles
+ * of various elements in the app.
+ */
 
+export const responsiveTitleBanner = [
+  "100px", // base
+  "100px", // sm
+  "150px", // md
+  "150px", // lg
+  "200px", // xl
+];
 
+export const responsiveTopBanner = [
+  "150px", // base
+  "150px", // sm
+  "200px", // md
+  "225px", // lg
+  "275px", // xl
+];
 
+export const responsiveBanner = [
+  "115px", // base
+  "100px", // sm
+  "150px", // md
+  "150px", // lg
+  "175px", // xl
+];
 
-export const responsiveTitleBanner = ["100px", "100px", "150px", "150px", "200px"];
-export const responsiveBanner = ["115px", "100px", "150px", "150px", "175px"];
+export const responsiveParagraph = [
+  "2xs", // base
+  "xs", // sm
+  "sm", // md
+  "sm", // lg
+  "sm", // xl
+];
 
+export const responsiveBannerHeading2 = [
+  "sm", // base
+  "sm", // sm
+  "xl", // md
+  "xl", // lg
+  "xl", // xl
+];
 
-export const responsiveParagraph = ["2xs", "xs", "sm", "sm", "sm"];
+export const responsiveHeading = [
+  "lg", // base
+  "2xl", // sm
+  "3xl", // md
+  "4xl", // lg
+  "4xl", // xl
+];
 
-export const responsiveBannerHeading2 = ["sm", "sm", "xl", "xl", "xl"];
+export const responsiveSubheading = [
+  "sm", // base
+  "md", // sm
+  "xl", // md
+  "2xl", // lg
+  "2xl", // xl
+];
 
+export const responsiveProductHeading = [
+  "2xs", // base
+  "xs", // sm
+  "sm", // md
+  "lg", // lg
+  "lg", // xl
+];
 
+export const responsiveProductSubheading = [
+  "2xs", // base
+  "xs", // sm
+  "12px", // md
+  "12px", // lg
+  "sm", // xl
+];
 
+export const responsiveTextAlignment = [
+  "center", // base
+  "center", // sm
+  "inherit", // md
+  "inherit", // lg
+  "inherit", // xl
+];
 
-
-export const responsiveHeading = ["lg", "2xl", "3xl", "4xl", "4xl"];
-export const responsiveSubheading = ["sm", "md", "xl", "2xl", "2xl"];
-
-
-
-
-
-
-export const responsiveProductHeading = ["2xs", "xs", "sm", "lg", "lg"];
-
-export const responsiveProductSubheading = ["2xs", "xs", "12px", "12px", "sm"];
-export const responsiveTextAlignment = ["center", "center", "inherit", "inherit", "inherit"];
