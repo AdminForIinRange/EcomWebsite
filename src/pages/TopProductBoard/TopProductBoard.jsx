@@ -6,7 +6,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import FeaturedProducts from "../../data/FeaturedProducts/FeaturedProducts.json";
-
+import DiorBagGirl from "../../assets/img/DiorBagGirl.png";
 export default function TopProductBoard() {
   const { TopProducts } = FeaturedProducts;
 
@@ -106,9 +106,9 @@ export default function TopProductBoard() {
           <Box
             w={"100%"}
             h={"100%"}
-            rounded={"2xl"}
+            rounded={""}
             bgSize={"cover"}
-            bgImage={"url(" + TopProducts[0].src + ")"}
+            bgImage={DiorBagGirl}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
           />
