@@ -32,7 +32,8 @@ export default function TopProductBoard() {
 
   return (
     <>
-      <Grid fontFamily={"Raleway"}
+      <Grid
+        fontFamily={"Raleway"}
         gridGap={"15px"}
         w={"100%"}
         h={"100%"}
@@ -64,24 +65,24 @@ export default function TopProductBoard() {
           gridRow={["1/6", "1/6", "1/6", "1/6", "2/3"]}
         >
           <HStack w={"100%"} h={"100%"}>
-          <Box
-            w={"100%"}
-            h={"100%"}
-            rounded={"2xl"}
-            bgSize={"cover"}
-            bgImage={"url(" + TopProducts[0].src + ")"}
-            bgPos={"center"}
-            bgRepeat={"no-repeat"}
-          ></Box>
-                    <Box
-            w={"100%"}
-            h={"100%"}
-            rounded={"2xl"}
-            bgSize={"cover"}
-            bgImage={"url(" + TopProducts[0].src + ")"}
-            bgPos={"center"}
-            bgRepeat={"no-repeat"}
-          ></Box>
+            <Box
+              w={"100%"}
+              h={"100%"}
+              rounded={"2xl"}
+              bgSize={"cover"}
+              bgImage={"url(" + TopProducts[0].src + ")"}
+              bgPos={"center"}
+              bgRepeat={"no-repeat"}
+            ></Box>
+            <Box
+              w={"100%"}
+              h={"100%"}
+              rounded={"2xl"}
+              bgSize={"cover"}
+              bgImage={"url(" + TopProducts[0].src + ")"}
+              bgPos={"center"}
+              bgRepeat={"no-repeat"}
+            ></Box>
           </HStack>
         </GridItem>
         <GridItem
@@ -113,26 +114,19 @@ export default function TopProductBoard() {
             rounded={"2xl"}
             bgSize={"cover"}
             bgPos={"center"}
-           
-           
             bgRepeat={"no-repeat"}
           >
-         
-                  <Box
-                  
-                    w={"100%"}
-                    h={"90px"}
-               
-                    bgSize={"cover"}
-                   bgColor={"red.200"}
-                    bgPos={"center "}
-                    bgRepeat={"no-repeat"}
-                  ></Box>
-                 
-              
+            <Box
+              w={"100%"}
+              h={"90px"}
+              bgSize={"cover"}
+              bgColor={"red.200"}
+              bgPos={"center "}
+              bgRepeat={"no-repeat"}
+            ></Box>
 
-            <VStack w={"100%"} h={"100%"} align={"center"} px={"2%"}  >
-              <HStack w={"100%"} h={"100%"}  justify={"center"} >
+            <VStack w={"100%"} h={"100%"} align={"center"} px={"2%"}>
+              <HStack w={"100%"} h={"100%"} justify={"center"}>
                 <Box w={"100%"} h={"100%"} rounded={"xl"}>
                   <Box
                     mt={"15px"}
@@ -151,7 +145,6 @@ export default function TopProductBoard() {
                     {TopProducts[3].description}
                   </Text>
                 </Box>{" "}
-           
                 <Box w={"100%"} h={"100%"} rounded={"xl"}>
                   <Box
                     mt={"15px"}
@@ -175,7 +168,6 @@ export default function TopProductBoard() {
               <HStack w={"100%"} h={"100%"}>
                 <Box w={"100%"} h={"100%"} rounded={"xl"}>
                   <Box
-                   
                     w={"100%"}
                     h={"200px"}
                     rounded={"2xl"}
@@ -193,7 +185,6 @@ export default function TopProductBoard() {
                 </Box>{" "}
                 <Box w={"100%"} h={"100%"} rounded={"xl"}>
                   <Box
-                    
                     w={"100%"}
                     h={"200px"}
                     rounded={"2xl"}
@@ -210,7 +201,7 @@ export default function TopProductBoard() {
                   </Text>
                 </Box>
                 <Box w={"100%"} h={"100%"} rounded={"xl"}>
-                  <Box 
+                  <Box
                     w={"100%"}
                     h={"200px"}
                     rounded={"2xl"}
@@ -235,6 +226,7 @@ export default function TopProductBoard() {
           h={"100%"}
           gridColumn={["1/6", "1/6", "1/6", "5/6", "5/5"]}
           gridRow={["1/6", "1/6", "1/6", "1/6", "1/5"]}
+          style={{ fontStyle: "italic" }}
         >
           <Box
             w={"100%"}
@@ -259,6 +251,7 @@ export default function TopProductBoard() {
                 bgColor={"pink.100"}
               >
                 <Text
+                  fontFamily={"serif"}
                   fontSize={responsiveHeading}
                   fontWeight={"600"}
                   color={"pink.300"}
@@ -266,6 +259,7 @@ export default function TopProductBoard() {
                   {WomenFashionBanner[1].header}
                 </Text>
                 <Text
+                  fontFamily={"serif"}
                   fontSize={responsiveSubheading}
                   color={"pink.300"}
                   mb={"10px"}
@@ -280,8 +274,7 @@ export default function TopProductBoard() {
         </GridItem>
 
         <GridItem
-          w={"100%"}
-          h={"100%"}
+   
           gridColumn={["1/6", "1/6", "1/6", "5/6", "1/5"]}
           gridRow={["1/6", "1/6", "1/6", "1/6", "4/4"]}
         >
@@ -290,10 +283,95 @@ export default function TopProductBoard() {
             h={"100%"}
             rounded={"2xl"}
             bgSize={"cover"}
-            bgImage={"url(" + TopProducts[0].src + ")"}
+            bgColor={"yellow.100"}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
-          />
+            p={2}
+          >
+            <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+              {TopProducts[3].product}
+            </Text>
+
+            <HStack w={"100%"} h={"100%"}>
+              <VStack
+                w={"100%"}
+                h={"100%"}
+                rounded={"2xl"}
+                bgSize={"cover"}
+                bgColor={"yellow.600"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
+                align={"left"}
+                p={"2"}
+              >
+                <Box
+                  w={"100%"}
+                  h={"100%"}
+                  rounded={"2xl"}
+                  bgSize={"cover"}
+                  bgImage={"url(" + TopProducts[3].src + ")"}
+                  bgPos={"center "}
+                  bgRepeat={"no-repeat"}
+                ></Box>
+                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                  {TopProducts[3].product}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                  {TopProducts[3].description}
+                </Text>
+              </VStack>
+
+              <VStack
+                w={"100%"}
+                h={"100%"}
+                rounded={"2xl"}
+                bgSize={"cover"}
+                bgColor={"yellow.600"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
+              ></VStack>
+
+              <VStack
+                w={"100%"}
+                h={"100%"}
+                rounded={"2xl"}
+                bgSize={"cover"}
+                bgColor={"yellow.600"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
+              ></VStack>
+
+              <VStack
+                w={"100%"}
+                h={"100%"}
+                rounded={"2xl"}
+                bgSize={"cover"}
+                bgColor={"yellow.600"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
+              ></VStack>
+
+              <VStack
+                w={"100%"}
+                h={"100%"}
+                rounded={"2xl"}
+                bgSize={"cover"}
+                bgColor={"yellow.600"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
+              ></VStack>
+
+              <VStack
+                w={"100%"}
+                h={"100%"}
+                rounded={"2xl"}
+                bgSize={"cover"}
+                bgColor={"yellow.600"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
+              ></VStack>
+            </HStack>
+          </Box>
         </GridItem>
       </Grid>
     </>
