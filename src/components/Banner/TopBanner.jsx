@@ -21,7 +21,7 @@ export default function TopBanner() {
       w={"100%"}
       h={"100%"}
       py={"5px"}
-    >
+     >
       <Box w={"100%"} h={"100%"} >
         <Box
           w={"100%"}
@@ -42,8 +42,9 @@ export default function TopBanner() {
             h={"100%"}
             align={"left"}
             justify={"end"}
+
           >
-            <Text
+            <Text textShadow={"0px 0px 10px #000000"}
               textAlign={""}
               fontSize={responsiveHeading}
               fontFamily={"Raleway"}
