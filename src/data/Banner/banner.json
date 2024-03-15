@@ -17,16 +17,8 @@
       "header": "Squidgy",
       "subheading": "Where Bouncing Brilliance Meets Your Shopping Whims!",
       "src":"../../../assets/ProductBanner/ScatterWorkBanner.png"
-    },
-    {
-     
-      "header": "Featured Porducts",
-      "subheading": "Discover the Best with Our Featured Product!"
     }
-    
-    
   ],
-
 
 
   "FeaturedAdvertBanner": [
@@ -48,7 +40,12 @@
     {
       "header": "Newest fashion trends",
       "subheading": "Unveiling the Latest in Fashion"
-    }
+    },
+  {
+
+    "header": "Exclusive fashion",
+    "subheading": "View Catalogue"
+  }
   ],
 
   "TechnologyBanner": [
