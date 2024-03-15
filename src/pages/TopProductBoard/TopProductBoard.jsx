@@ -6,6 +6,7 @@ import {
   Stack,
   GridItem,
   useBreakpointValue,
+  VStack,
 } from "@chakra-ui/react";
 import FeaturedProducts from "../../data/FeaturedProducts/FeaturedProducts.json";
 import DiorBagGirl from "../../assets/img/DiorBagGirl.png";
@@ -20,9 +21,8 @@ import {
 import SeeMoreBtn from "../../components/Buttons/SeeMoreBtn";
 import banner from "../../data/Banner/banner.json";
 
-
 export default function TopProductBoard() {
-    const { WomenFashionBanner } = banner;
+  const { WomenFashionBanner } = banner;
   const { TopProducts } = FeaturedProducts;
 
   // You can use breakpoint values to conditionally render components
@@ -100,10 +100,56 @@ export default function TopProductBoard() {
             h={"100%"}
             rounded={"2xl"}
             bgSize={"cover"}
-            bgImage={"url(" + TopProducts[0].src + ")"}
             bgPos={"center"}
+            p={"2%"}
+            bgColor={"purple.200"}
             bgRepeat={"no-repeat"}
-          />
+          >
+            <Text fontWeight={"500"} fontSize={responsiveSubheading}>
+              Top Rated
+            </Text>
+
+            <VStack w={"100%"}  align={"center"}>
+            <Box w={"100%"} h={"100%"} rounded={"xl"}>
+                <Box
+                  mt={"15px"}
+                  w={"100%"}
+                  h={"250px"}
+                  rounded={"2xl"}
+                  bgSize={"cover"}
+                  bgImage={"url(" + TopProducts[3].src + ")"}
+                  bgPos={"center "}
+                  bgRepeat={"no-repeat"}
+                ></Box>
+                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                  {TopProducts[3].product}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                  {TopProducts[3].description}
+                </Text>
+              </Box>
+              <Box w={"100%"} h={"100%"} rounded={"xl"}>
+                <Box
+                  mt={"15px"}
+                  w={"100%"}
+                  h={"250px"}
+                  rounded={"2xl"}
+                  bgSize={"cover"}
+                  bgImage={"url(" + TopProducts[3].src + ")"}
+                  bgPos={"center "}
+                  bgRepeat={"no-repeat"}
+                ></Box>
+                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                  {TopProducts[3].product}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                  {TopProducts[3].description}
+                </Text>
+              </Box>
+
+              
+            </VStack>
+          </Box>
         </GridItem>
         <GridItem
           w={"100%"}
@@ -120,7 +166,13 @@ export default function TopProductBoard() {
             bgPos={"top center"}
             bgRepeat={"no-repeat"}
           >
-            <Stack justify={"end"} align={"center"} w={"100%"} h={"100%"} p={"10px"} >
+            <Stack
+              justify={"end"}
+              align={"center"}
+              w={"100%"}
+              h={"100%"}
+              p={"10px"}
+            >
               <Box
                 w={"100%"}
                 h={["80px", "90px", "90px", "100px", "170px"]}
@@ -134,7 +186,11 @@ export default function TopProductBoard() {
                 >
                   {WomenFashionBanner[1].header}
                 </Text>
-                <Text fontSize={responsiveSubheading} color={"pink.300"} mb={"10px"}>
+                <Text
+                  fontSize={responsiveSubheading}
+                  color={"pink.300"}
+                  mb={"10px"}
+                >
                   {WomenFashionBanner[1].subheading}
                 </Text>
 

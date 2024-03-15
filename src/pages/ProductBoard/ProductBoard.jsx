@@ -69,7 +69,7 @@ export default function ProductBoard() {
                   h={"100%"}
                   rounded={"xl"}
                 >
-                  <Box align={"left"} position={"absolute"} top={"500px"}></Box>
+                  
                   <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
                     {Frontproducts[0].product}
                   </Text>
