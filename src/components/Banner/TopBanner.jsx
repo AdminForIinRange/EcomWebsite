@@ -9,9 +9,10 @@ import {
 } from "../../data/GlobalPresets/Presets";
 import banner from "../../data/Banner/banner.json";
 
+import ScatterWorkBanner from "../../assets/ProductBanner/ScatterWorkBanner.png";
 export default function TopBanner() {
 
-  const { FeaturedAdvertBanner } = banner
+  const { TopBannerIntro } = banner
   return (
     <HStack
       align={"start"}
@@ -26,7 +27,7 @@ export default function TopBanner() {
           h={responsiveTitleBanner}
           rounded={"2xl"}
           bgSize={"cover"}
-          bgImage={HeadphoneYellow}
+          bgImage={ScatterWorkBanner}
           bgPos={"center"}
           bgRepeat={"no-repeat"}
           p={"2%"}
@@ -46,10 +47,10 @@ export default function TopBanner() {
               fontFamily={"Raleway"}
               fontWeight={"700"}
             >
-              {FeaturedAdvertBanner[0].header}
+              {TopBannerIntro[0].header}
             </Text>
             <Text fontSize={responsiveSubheading} fontFamily={"Raleway"}>
-              {FeaturedAdvertBanner[0].subheading}
+              {TopBannerIntro[0].subheading}
             </Text>
           </VStack>
         </Box>
