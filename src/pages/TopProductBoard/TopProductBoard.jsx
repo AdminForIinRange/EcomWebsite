@@ -32,7 +32,7 @@ export default function TopProductBoard() {
 
   return (
     <>
-      <Grid
+      <Grid fontFamily={"Raleway"}
         gridGap={"15px"}
         w={"100%"}
         h={"100%"}
@@ -51,7 +51,7 @@ export default function TopProductBoard() {
             h={"100%"}
             rounded={"2xl"}
             bgSize={"cover"}
-            bgImage={"url(" + TopProducts[0].src + ")"}
+            bgImage={`https://source.unsplash.com/random/600x400?product+skincare+fasion`}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
           />
@@ -63,6 +63,7 @@ export default function TopProductBoard() {
           gridColumn={["1/6", "1/6", "1/6", "1/6", "1/3"]}
           gridRow={["1/6", "1/6", "1/6", "1/6", "2/3"]}
         >
+          <HStack w={"100%"} h={"100%"}>
           <Box
             w={"100%"}
             h={"100%"}
@@ -71,7 +72,17 @@ export default function TopProductBoard() {
             bgImage={"url(" + TopProducts[0].src + ")"}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
-          />
+          ></Box>
+                    <Box
+            w={"100%"}
+            h={"100%"}
+            rounded={"2xl"}
+            bgSize={"cover"}
+            bgImage={"url(" + TopProducts[0].src + ")"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
+          ></Box>
+          </HStack>
         </GridItem>
         <GridItem
           w={"100%"}
@@ -102,92 +113,121 @@ export default function TopProductBoard() {
             rounded={"2xl"}
             bgSize={"cover"}
             bgPos={"center"}
-            p={"2%"}
-            bgColor={"purple.200"}
+           
+           
             bgRepeat={"no-repeat"}
           >
-            <Text fontWeight={"500"} fontSize={responsiveSubheading}>
-              Top Rated
-            </Text>
-
-            <VStack w={"100%"} h={"100%"} align={"center"}>
-              <Box w={"100%"} h={"100%"} rounded={"xl"}>
-                <Box
-                  mt={"15px"}
-                  w={"100%"}
-                  h={"300px"}
-                  rounded={"2xl"}
-                  bgSize={"cover"}
-                  bgImage={"url(" + TopProducts[3].src + ")"}
-                  bgPos={"center "}
-                  bgRepeat={"no-repeat"}
-                ></Box>
-                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-                  {TopProducts[3].product}
-                </Text>
-                <Text fontSize={responsiveProductSubheading}>
-                  {TopProducts[3].description}
-                </Text>
-              </Box>
-
-              <HStack w={"100%"} h={"100%"}> 
-              <Box w={"100%"} h={"100%"} rounded={"xl"}>
-                <Box
-                  mt={"15px"}
-                  w={"100%"}
-                  h={"200px"}
-                  rounded={"2xl"}
-                  bgSize={"cover"}
-                  bgImage={"url(" + TopProducts[3].src + ")"}
-                  bgPos={"center "}
-                  bgRepeat={"no-repeat"}
-                ></Box>
-                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-                  {TopProducts[3].product}
-                </Text>
-                <Text fontSize={responsiveProductSubheading}>
-                  {TopProducts[3].description}
-                </Text>
-              </Box> <Box w={"100%"} h={"100%"} rounded={"xl"}>
-                <Box
-                  mt={"15px"}
-                  w={"100%"}
-                  h={"200px"}
-                  rounded={"2xl"}
-                  bgSize={"cover"}
-                  bgImage={"url(" + TopProducts[3].src + ")"}
-                  bgPos={"center "}
-                  bgRepeat={"no-repeat"}
-                ></Box>
-                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-                  {TopProducts[3].product}
-                </Text>
-                <Text fontSize={responsiveProductSubheading}>
-                  {TopProducts[3].description}
-                </Text>
-              </Box>
-              <Box w={"100%"} h={"100%"} rounded={"xl"}>
-                <Box
-                  mt={"15px"}
-                  w={"100%"}
-                  h={"200px"}
-                  rounded={"2xl"}
-                  bgSize={"cover"}
-                  bgImage={"url(" + TopProducts[3].src + ")"}
-                  bgPos={"center "}
-                  bgRepeat={"no-repeat"}
-                ></Box>
-                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-                  {TopProducts[3].product}
-                </Text>
-                <Text fontSize={responsiveProductSubheading}>
-                  {TopProducts[3].description}
-                </Text>
-              </Box>
+         
+                  <Box
+                  
+                    w={"100%"}
+                    h={"90px"}
+               
+                    bgSize={"cover"}
+                   bgColor={"red.200"}
+                    bgPos={"center "}
+                    bgRepeat={"no-repeat"}
+                  ></Box>
+                 
               
+
+            <VStack w={"100%"} h={"100%"} align={"center"} px={"2%"}  >
+              <HStack w={"100%"} h={"100%"}  justify={"center"} >
+                <Box w={"100%"} h={"100%"} rounded={"xl"}>
+                  <Box
+                    mt={"15px"}
+                    w={"100%"}
+                    h={"270px"}
+                    rounded={"2xl"}
+                    bgSize={"cover"}
+                    bgImage={"url(" + TopProducts[3].src + ")"}
+                    bgPos={"center "}
+                    bgRepeat={"no-repeat"}
+                  ></Box>
+                  <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                    {TopProducts[3].product}
+                  </Text>
+                  <Text fontSize={responsiveProductSubheading}>
+                    {TopProducts[3].description}
+                  </Text>
+                </Box>{" "}
+           
+                <Box w={"100%"} h={"100%"} rounded={"xl"}>
+                  <Box
+                    mt={"15px"}
+                    w={"100%"}
+                    h={"270px"}
+                    rounded={"2xl"}
+                    bgSize={"cover"}
+                    bgImage={"url(" + TopProducts[3].src + ")"}
+                    bgPos={"center "}
+                    bgRepeat={"no-repeat"}
+                  ></Box>
+                  <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                    {TopProducts[3].product}
+                  </Text>
+                  <Text fontSize={responsiveProductSubheading}>
+                    {TopProducts[3].description}
+                  </Text>
+                </Box>
+              </HStack>
+
+              <HStack w={"100%"} h={"100%"}>
+                <Box w={"100%"} h={"100%"} rounded={"xl"}>
+                  <Box
+                   
+                    w={"100%"}
+                    h={"200px"}
+                    rounded={"2xl"}
+                    bgSize={"cover"}
+                    bgImage={"url(" + TopProducts[3].src + ")"}
+                    bgPos={"center "}
+                    bgRepeat={"no-repeat"}
+                  ></Box>
+                  <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                    {TopProducts[3].product}
+                  </Text>
+                  <Text fontSize={responsiveProductSubheading}>
+                    {TopProducts[3].description}
+                  </Text>
+                </Box>{" "}
+                <Box w={"100%"} h={"100%"} rounded={"xl"}>
+                  <Box
+                    
+                    w={"100%"}
+                    h={"200px"}
+                    rounded={"2xl"}
+                    bgSize={"cover"}
+                    bgImage={"url(" + TopProducts[3].src + ")"}
+                    bgPos={"center "}
+                    bgRepeat={"no-repeat"}
+                  ></Box>
+                  <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                    {TopProducts[3].product}
+                  </Text>
+                  <Text fontSize={responsiveProductSubheading}>
+                    {TopProducts[3].description}
+                  </Text>
+                </Box>
+                <Box w={"100%"} h={"100%"} rounded={"xl"}>
+                  <Box 
+                    w={"100%"}
+                    h={"200px"}
+                    rounded={"2xl"}
+                    bgSize={"cover"}
+                    bgImage={"url(" + TopProducts[3].src + ")"}
+                    bgPos={"center "}
+                    bgRepeat={"no-repeat"}
+                  ></Box>
+                  <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                    {TopProducts[3].product}
+                  </Text>
+                  <Text fontSize={responsiveProductSubheading}>
+                    {TopProducts[3].description}
+                  </Text>
+                </Box>
               </HStack>
             </VStack>
-            
           </Box>
         </GridItem>
         <GridItem
