@@ -29,7 +29,7 @@ export default function ProductCategoryLineOne() {
   return (
     <>
       <HStack align={"start"} py={"15px"} w={"100%"} h={"100%"}>
-        <ProductCategoryBox Theme={"#E2E8F0"}  >
+        <ProductCategoryBox  BtnTheme={"gray"}BgcTheme={"#E2E8F0"}  >
           <Text
             fontSize={responsiveBannerHeading2}
             fontFamily={"Raleway"}

@@ -32,7 +32,7 @@ export default function ProductCategoryLineOne() {
   const { WomenFashionCategory, CategoryBox } = ProductCategoryLine;
   return (
     <HStack align={"start"} py={"15px"} w={"100%"} h={"100%"}>
-      <ProductCategoryBox Theme={"#F5DEB3"}> 
+      <ProductCategoryBox BtnTheme={"teal"} BgcTheme={"#F5DEB3"}> 
         <Text
           fontSize={responsiveBannerHeading2}
           fontFamily={"Raleway"}

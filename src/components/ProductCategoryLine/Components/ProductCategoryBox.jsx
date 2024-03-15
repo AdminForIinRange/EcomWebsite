@@ -10,7 +10,7 @@ import {
 
 import SeeMoreBtn from "../../Buttons/SeeMoreBtn";
 
-export default function ProductCategoryBox({ children, Theme }) {
+export default function ProductCategoryBox({ children, BgcTheme, BtnTheme }) {
   
     const isSmallScreen = useBreakpointValue({ base: true, lg: false });
   
@@ -27,7 +27,7 @@ export default function ProductCategoryBox({ children, Theme }) {
           h={"300px"}
           align={"left"}
           justify={"top"}
-          bgColor={Theme}
+          bgColor={ BgcTheme}
           p={"0.5%"}
           rounded={"md"}
           textAlign={"center"}
@@ -38,7 +38,7 @@ export default function ProductCategoryBox({ children, Theme }) {
             align={"end"}
             h={["50%", "60%", "60%", "60%", "60%"]}
           >
-            <SeeMoreBtn />
+            <SeeMoreBtn  BtnTheme={BtnTheme}/>
           </HStack>
         </VStack>
       )}

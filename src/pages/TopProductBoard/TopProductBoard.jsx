@@ -2,11 +2,21 @@ import React from "react";
 import {
   Box,
   Grid,
-  GridItem,
+  Text,
+Stack,  GridItem,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import FeaturedProducts from "../../data/FeaturedProducts/FeaturedProducts.json";
 import DiorBagGirl from "../../assets/img/DiorBagGirl.png";
+import {
+    responsiveHeading,
+    responsiveSubheading,
+    responsiveProductHeading,
+    responsiveProductSubheading,
+    responsiveTextAlignment,
+    responsiveTitleBanner,
+  } from "../../data/GlobalPresets/Presets";
+import SeeMoreBtn from "../../components/Buttons/SeeMoreBtn";
 export default function TopProductBoard() {
   const { TopProducts } = FeaturedProducts;
 
@@ -19,7 +29,7 @@ export default function TopProductBoard() {
       <Grid
       gridGap={"15px"}
     
-      w={"100%"}
+      w={"100%" }
       h={"100%"}
         minH={"100vh"} // Adjusted minH to fill the viewport height
        
@@ -111,7 +121,26 @@ export default function TopProductBoard() {
             bgImage={DiorBagGirl}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
-          />
+          >
+
+            <Stack justify={""} align={"center"}  w={
+            "100%"
+            } h={"100%"}>
+
+            <Text fontSize={responsiveHeading} fontWeight={"600"} color={"pink.300"} > 
+                    {TopProducts[0].product}
+                  </Text>
+                  <Text fontSize={responsiveSubheading} color={"pink.300"}>
+                    {TopProducts[0].description}
+                  </Text>
+
+            <SeeMoreBtn BtnTheme={"pink.200"}/>
+            
+
+
+            </Stack>
+          </Box>
+
         </GridItem>
 
 

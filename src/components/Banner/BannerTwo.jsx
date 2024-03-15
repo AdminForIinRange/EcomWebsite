@@ -63,7 +63,7 @@ export default function BannerTwo() {
               {WomenFashionBanner[0].subheading}
             </Text>
             <HStack   justify={"top"} align={"end"} h={["20%", "40%", "100%", "100%", "100%"]}>
-            <SeeMoreBtn />
+            <SeeMoreBtn BtnTheme={"teal"} />
             </HStack>
           
           </VStack>

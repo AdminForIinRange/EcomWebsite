@@ -64,7 +64,7 @@ export default function BannerThree() {
               align={"end"}
               h={["20%", "40%", "100%", "100%", "100%"]}
             >
-              <SeeMoreBtn />
+              <SeeMoreBtn BtnTheme={"gray"} />
             </HStack>
           </VStack>
         </Box>
