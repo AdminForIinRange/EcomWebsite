@@ -78,7 +78,9 @@
         "product": "Smart thermostat",
         "description": "temperature control.",
         "src": "https://source.unsplash.com/gold-apple-iphone-smartphone-held-at-the-door-IJkSskfEqrM",
-        "theme":"#E2E8F0"
+        "theme":"#E2E8F0",
+        "price": 99.99
+        
 
         
       },
@@ -86,26 +88,30 @@
         "product": "Wireless earbuds",
         "description": "Cord-free music.",
         "src": "https://source.unsplash.com/white-and-black-apple-ceramic-mug-k6zPpoQhVX0",
-        "theme": "#76E4F7"
+        "theme": "#76E4F7",
+        "price": 49.99
       },
       {
         "product": "Robot vacuum cleaner",
         "description": "cleaning with precision.",
         "src": "https://source.unsplash.com/grayscale-photo-of-round-frame-on-wooden-floor-znfc7DF7M7U",
         "srcTwo": "https://source.unsplash.com/a-white-robot-vacuum-sitting-on-top-of-a-wooden-floor-eb4e-PVDhWY",
-        "theme": "#CBD5E0"
+        "theme": "#CBD5E0",
+        "price": 239.99
       },
       {
         "product": "Fitness tracker",
         "description": "Your Fitness Buddy.",
         "src": " https://source.unsplash.com/person-clicking-apple-watch-smartwatch-rCOWMC8qf8A",
-        "theme":"#F1D2B7"
+        "theme":"#F1D2B7",
+        "price": 149.99
       },
       {
         "product": "home camera",
         "description": " monitor your safety.",
         "src": "https://source.unsplash.com/a-black-and-white-video-game-controller-VVBjk060DdY",
-        "theme":"#63B3ED"
+        "theme":"#63B3ED",
+        "price": 129.99
       },
 
 
@@ -117,7 +123,8 @@
         "product": "DSLR Camera",
         "description": "Capture moments.",
         "src": "https://source.unsplash.com/person-holding-black-dslr-camera-I5g5q6qLuUs",
-        "theme":"#f25aa9"
+        "theme":"#f25aa9",
+        "price": 599.99
 
         
       },
@@ -125,28 +132,100 @@
         "product": "Si Giorgio Armani",
         "description": "Smell Luxury.",
         "src": "https://source.unsplash.com/pink-nail-polish-7BL7oWcWKWo",
-        "theme":"#FFC6F3"
+        "theme":"#FFC6F3",
+        "price": 239.99
       },
       {
         "product": "GameBoy",
         "description": "Fun Gadgets.",
         "src": "https://source.unsplash.com/white-and-black-nintendo-game-boy-color-on-yellow-surface-v8XaVfyo41Q",
-        "theme": "#FAF089"
+        "theme": "#FAF089",
+        "price": 99.99
       },
       {
         "product": "Jade Roller",
         "description": "Smooth and Refined.",
         "src": " https://source.unsplash.com/gray-and-black-spoon-in-persons-hand-Q0y-1aorvJo",
-        "theme":"#9AE6B4"
+        "theme":"#9AE6B4",
+        "price": 49.99
+      }
+    ],
+    "Exclusive": [
+      {
+        "product": "Smart thermostat",
+        "description": "temperature control.",
+        "src": "https://source.unsplash.com/gold-apple-iphone-smartphone-held-at-the-door-IJkSskfEqrM",
+        "theme":"#E2E8F0",
+        "price": 99.99
+        
+
+        
+      },
+      {
+        "product": "Wireless earbuds",
+        "description": "Cord-free music.",
+        "src": "https://source.unsplash.com/white-and-black-apple-ceramic-mug-k6zPpoQhVX0",
+        "theme": "#76E4F7",
+        "price": 49.99
+      },
+      {
+        "product": "Robot vacuum cleaner",
+        "description": "cleaning with precision.",
+        "src": "https://source.unsplash.com/grayscale-photo-of-round-frame-on-wooden-floor-znfc7DF7M7U",
+        "srcTwo": "https://source.unsplash.com/a-white-robot-vacuum-sitting-on-top-of-a-wooden-floor-eb4e-PVDhWY",
+        "theme": "#CBD5E0",
+        "price": 239.99
+      },
+      {
+        "product": "Fitness tracker",
+        "description": "Your Fitness Buddy.",
+        "src": " https://source.unsplash.com/person-clicking-apple-watch-smartwatch-rCOWMC8qf8A",
+        "theme":"#F1D2B7",
+        "price": 149.99
       },
       {
         "product": "home camera",
         "description": " monitor your safety.",
         "src": "https://source.unsplash.com/a-black-and-white-video-game-controller-VVBjk060DdY",
-        "theme":"#63B3ED"
+        "theme":"#63B3ED",
+        "price": 129.99
+      },
+
+
+
+
+
+
+      {
+        "product": "DSLR Camera",
+        "description": "Capture moments.",
+        "src": "https://source.unsplash.com/person-holding-black-dslr-camera-I5g5q6qLuUs",
+        "theme":"#f25aa9",
+        "price": 599.99
+
+        
+      },
+      {
+        "product": "Si Giorgio Armani",
+        "description": "Smell Luxury.",
+        "src": "https://source.unsplash.com/pink-nail-polish-7BL7oWcWKWo",
+        "theme":"#FFC6F3",
+        "price": 239.99
+      },
+      {
+        "product": "GameBoy",
+        "description": "Fun Gadgets.",
+        "src": "https://source.unsplash.com/white-and-black-nintendo-game-boy-color-on-yellow-surface-v8XaVfyo41Q",
+        "theme": "#FAF089",
+        "price": 99.99
+      },
+      {
+        "product": "Jade Roller",
+        "description": "Smooth and Refined.",
+        "src": " https://source.unsplash.com/gray-and-black-spoon-in-persons-hand-Q0y-1aorvJo",
+        "theme":"#9AE6B4",
+        "price": 49.99
       }
     ]
-    
-    
   }
   

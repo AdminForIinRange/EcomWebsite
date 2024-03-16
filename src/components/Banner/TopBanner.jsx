@@ -28,12 +28,13 @@ export default function TopBanner() {
           h={responsiveTopBanner}
           rounded={"2xl"}
           bgSize={"cover"}
-          bgImage={ScatterWorkBanner}
+          bgImage={`https://source.unsplash.com/random/1920x1080?silk&${Date.now()}`}
+
           bgPos={"center"}
           bgRepeat={"no-repeat"}
           p={"2%"}
 
-          justifyContent={"end"}
+          justifyContent={""}
           alignItems={"end"}
         >
           <VStack

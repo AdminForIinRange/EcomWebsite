@@ -15,11 +15,11 @@ export const responsiveTitleBanner = [
 ];
 
 export const responsiveTopBanner = [
-  "150px", // base
-  "150px", // sm
-  "200px", // md
-  "225px", // lg
-  "275px", // xl
+  "260px", // base
+  "260px", // sm
+  "320px", // md
+  "350px", // lg
+  "400px", // xl
 ];
 
 export const responsiveBanner = [

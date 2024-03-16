@@ -21,10 +21,11 @@ import {
 } from "../../data/GlobalPresets/Presets";
 import SeeMoreBtn from "../../components/Buttons/SeeMoreBtn";
 import banner from "../../data/Banner/banner.json";
-
+import ProductCategoryLine from "../../data/ProductCategoryLine/ProductCategoryLine.json";
+import ProductLine from "../../components/ProductCategoryLine/Components/ProductLine";
 export default function TopProductBoard() {
   const { WomenFashionBanner } = banner;
-  const { TopProducts } = FeaturedProducts;
+  const { Exclusive } = FeaturedProducts;
 
   // You can use breakpoint values to conditionally render components
   const isSmallScreen = useBreakpointValue({ base: true, lg: false });
@@ -33,7 +34,7 @@ export default function TopProductBoard() {
   return (
     <>
       <Grid
-        fontFamily={"Raleway"}
+      
         gridGap={"15px"}
         w={"100%"}
         h={"100%"}
@@ -70,7 +71,7 @@ export default function TopProductBoard() {
               h={"100%"}
               rounded={"2xl"}
               bgSize={"cover"}
-              bgImage={"url(" + TopProducts[0].src + ")"}
+              bgImage={"url(" + Exclusive[0].src + ")"}
               bgPos={"center"}
               bgRepeat={"no-repeat"}
             ></Box>
@@ -79,7 +80,7 @@ export default function TopProductBoard() {
               h={"100%"}
               rounded={"2xl"}
               bgSize={"cover"}
-              bgImage={"url(" + TopProducts[0].src + ")"}
+              bgImage={"url(" + Exclusive[0].src + ")"}
               bgPos={"center"}
               bgRepeat={"no-repeat"}
             ></Box>
@@ -96,7 +97,7 @@ export default function TopProductBoard() {
             h={"100%"}
             rounded={"2xl"}
             bgSize={"cover"}
-            bgImage={"url(" + TopProducts[0].src + ")"}
+            bgImage={"url(" + Exclusive[0].src + ")"}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
           />
@@ -134,15 +135,18 @@ export default function TopProductBoard() {
                     h={"270px"}
                     rounded={"2xl"}
                     bgSize={"cover"}
-                    bgImage={"url(" + TopProducts[3].src + ")"}
+                    bgImage={"url(" + Exclusive[3].src + ")"}
                     bgPos={"center "}
                     bgRepeat={"no-repeat"}
                   ></Box>
                   <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-                    {TopProducts[3].product}
+                    {Exclusive[3].product}
                   </Text>
                   <Text fontSize={responsiveProductSubheading}>
-                    {TopProducts[3].description}
+                    {Exclusive[3].description}
+                  </Text>
+                  <Text fontSize={responsiveProductSubheading}>
+                    {Exclusive[3].price}
                   </Text>
                 </Box>{" "}
                 <Box w={"100%"} h={"100%"} rounded={"xl"}>
@@ -152,15 +156,18 @@ export default function TopProductBoard() {
                     h={"270px"}
                     rounded={"2xl"}
                     bgSize={"cover"}
-                    bgImage={"url(" + TopProducts[3].src + ")"}
+                    bgImage={"url(" + Exclusive[3].src + ")"}
                     bgPos={"center "}
                     bgRepeat={"no-repeat"}
                   ></Box>
                   <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-                    {TopProducts[3].product}
+                    {Exclusive[3].product}
                   </Text>
                   <Text fontSize={responsiveProductSubheading}>
-                    {TopProducts[3].description}
+                    {Exclusive[3].description}
+                  </Text>
+                  <Text fontSize={responsiveProductSubheading}>
+                    {Exclusive[3].price}
                   </Text>
                 </Box>
               </HStack>
@@ -172,15 +179,18 @@ export default function TopProductBoard() {
                     h={"200px"}
                     rounded={"2xl"}
                     bgSize={"cover"}
-                    bgImage={"url(" + TopProducts[3].src + ")"}
+                    bgImage={"url(" + Exclusive[3].src + ")"}
                     bgPos={"center "}
                     bgRepeat={"no-repeat"}
                   ></Box>
                   <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-                    {TopProducts[3].product}
+                    {Exclusive[3].product}
                   </Text>
                   <Text fontSize={responsiveProductSubheading}>
-                    {TopProducts[3].description}
+                    {Exclusive[3].description}
+                  </Text>
+                   <Text fontSize={responsiveProductSubheading}>
+                    {Exclusive[3].price}
                   </Text>
                 </Box>{" "}
                 <Box w={"100%"} h={"100%"} rounded={"xl"}>
@@ -189,15 +199,18 @@ export default function TopProductBoard() {
                     h={"200px"}
                     rounded={"2xl"}
                     bgSize={"cover"}
-                    bgImage={"url(" + TopProducts[3].src + ")"}
+                    bgImage={"url(" + Exclusive[3].src + ")"}
                     bgPos={"center "}
                     bgRepeat={"no-repeat"}
                   ></Box>
                   <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-                    {TopProducts[3].product}
+                    {Exclusive[3].product}
                   </Text>
                   <Text fontSize={responsiveProductSubheading}>
-                    {TopProducts[3].description}
+                    {Exclusive[3].description}
+                  </Text>
+                  <Text fontSize={responsiveProductSubheading}>
+                    {Exclusive[3].price}
                   </Text>
                 </Box>
                 <Box w={"100%"} h={"100%"} rounded={"xl"}>
@@ -206,15 +219,18 @@ export default function TopProductBoard() {
                     h={"200px"}
                     rounded={"2xl"}
                     bgSize={"cover"}
-                    bgImage={"url(" + TopProducts[3].src + ")"}
+                    bgImage={"url(" + Exclusive[3].src + ")"}
                     bgPos={"center "}
                     bgRepeat={"no-repeat"}
                   ></Box>
                   <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-                    {TopProducts[3].product}
+                    {Exclusive[3].product}
                   </Text>
                   <Text fontSize={responsiveProductSubheading}>
-                    {TopProducts[3].description}
+                    {Exclusive[3].description}
+                  </Text>
+                  <Text fontSize={responsiveProductSubheading}>
+                    {Exclusive[3].price}
                   </Text>
                 </Box>
               </HStack>
@@ -286,90 +302,215 @@ export default function TopProductBoard() {
             bgColor={"yellow.100"}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
-            p={2}
+            p={"0.5%"}
           >
-            <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-              {TopProducts[3].product}
+            <Text color={"orange"}  fontSize={responsiveProductHeading} fontWeight={"700"} >
+              Exclusive 02:58:46
             </Text>
+            
 
             <HStack w={"100%"} h={"100%"}>
-              <VStack
+             { <VStack
                 w={"100%"}
                 h={"100%"}
                 rounded={"2xl"}
                 bgSize={"cover"}
-                bgColor={"yellow.600"}
+              
                 bgPos={"center"}
                 bgRepeat={"no-repeat"}
                 align={"left"}
-                p={"2"}
+         
               >
                 <Box
                   w={"100%"}
-                  h={"100%"}
+                  h={"100px"}
                   rounded={"2xl"}
                   bgSize={"cover"}
-                  bgImage={"url(" + TopProducts[3].src + ")"}
+                  bgImage={"url(" + Exclusive[3].src + ")"}
                   bgPos={"center "}
                   bgRepeat={"no-repeat"}
                 ></Box>
+                <Box >
                 <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-                  {TopProducts[3].product}
+                  {Exclusive[3].product}
                 </Text>
                 <Text fontSize={responsiveProductSubheading}>
-                  {TopProducts[3].description}
+                  {Exclusive[3].description}
                 </Text>
-              </VStack>
+                <Text fontSize={responsiveProductSubheading}>
+                    {Exclusive[3].price}
+                  </Text>
 
+                </Box>
+         
+              </VStack>}
+{/* 
               <VStack
                 w={"100%"}
                 h={"100%"}
                 rounded={"2xl"}
                 bgSize={"cover"}
-                bgColor={"yellow.600"}
+              
                 bgPos={"center"}
                 bgRepeat={"no-repeat"}
-              ></VStack>
+                align={"left"}
+         
+              >
+                <Box
+                  w={"100%"}
+                  h={"100px"}
+                  rounded={"2xl"}
+                  bgSize={"cover"}
+                  bgImage={"url(" + Exclusive[3].src + ")"}
+                  bgPos={"center "}
+                  bgRepeat={"no-repeat"}
+                ></Box>
+                <Box >
+                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                  {Exclusive[3].product}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                  {Exclusive[3].description}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                    {Exclusive[3].price}
+                  </Text>
 
-              <VStack
+                </Box>
+         
+              </VStack>     <VStack
                 w={"100%"}
                 h={"100%"}
                 rounded={"2xl"}
                 bgSize={"cover"}
-                bgColor={"yellow.600"}
+              
                 bgPos={"center"}
                 bgRepeat={"no-repeat"}
-              ></VStack>
+                align={"left"}
+         
+              >
+                <Box
+                  w={"100%"}
+                  h={"100px"}
+                  rounded={"2xl"}
+                  bgSize={"cover"}
+                  bgImage={"url(" + Exclusive[3].src + ")"}
+                  bgPos={"center "}
+                  bgRepeat={"no-repeat"}
+                ></Box>
+                <Box >
+                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                  {Exclusive[3].product}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                  {Exclusive[3].description}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                    {Exclusive[3].price}
+                  </Text>
 
-              <VStack
+                </Box>
+         
+              </VStack>     <VStack
                 w={"100%"}
                 h={"100%"}
                 rounded={"2xl"}
                 bgSize={"cover"}
-                bgColor={"yellow.600"}
+              
                 bgPos={"center"}
                 bgRepeat={"no-repeat"}
-              ></VStack>
+                align={"left"}
+         
+              >
+                <Box
+                  w={"100%"}
+                  h={"100px"}
+                  rounded={"2xl"}
+                  bgSize={"cover"}
+                  bgImage={"url(" + Exclusive[3].src + ")"}
+                  bgPos={"center "}
+                  bgRepeat={"no-repeat"}
+                ></Box>
+                <Box >
+                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                  {Exclusive[3].product}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                  {Exclusive[3].description}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                    {Exclusive[3].price}
+                  </Text>
 
-              <VStack
+                </Box>
+         
+              </VStack>     <VStack
                 w={"100%"}
                 h={"100%"}
                 rounded={"2xl"}
                 bgSize={"cover"}
-                bgColor={"yellow.600"}
+              
                 bgPos={"center"}
                 bgRepeat={"no-repeat"}
-              ></VStack>
+                align={"left"}
+         
+              >
+                <Box
+                  w={"100%"}
+                  h={"100px"}
+                  rounded={"2xl"}
+                  bgSize={"cover"}
+                  bgImage={"url(" + Exclusive[3].src + ")"}
+                  bgPos={"center "}
+                  bgRepeat={"no-repeat"}
+                ></Box>
+                <Box >
+                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                  {Exclusive[3].product}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                  {Exclusive[3].description}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                    {Exclusive[3].price}
+                  </Text>
 
-              <VStack
+                </Box>
+         
+              </VStack>     <VStack
                 w={"100%"}
                 h={"100%"}
                 rounded={"2xl"}
                 bgSize={"cover"}
-                bgColor={"yellow.600"}
+              
                 bgPos={"center"}
                 bgRepeat={"no-repeat"}
-              ></VStack>
+                align={"left"}
+         
+              >
+                <Box
+                  w={"100%"}
+                  h={"100px"}
+                  rounded={"2xl"}
+                  bgSize={"cover"}
+                  bgImage={"url(" + Exclusive[3].src + ")"}
+                  bgPos={"center "}
+                  bgRepeat={"no-repeat"}
+                ></Box>
+                <Box >
+                <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
+                  {Exclusive[3].product}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                  {Exclusive[3].description}
+                </Text>
+                <Text fontSize={responsiveProductSubheading}>
+                    {Exclusive[3].price}
+                  </Text>
+
+                </Box>
+         
+              </VStack>      */}
             </HStack>
           </Box>
         </GridItem>
