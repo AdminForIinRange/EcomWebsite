@@ -24,15 +24,17 @@ export default function Home() {
       <ProductBoard />
       <Box w={"100%"} h={"100%"} py={["1%", "1%", "2%", "2%", "2%"]}>
         <BannerTwo />
+        <ProductCategoryLineTwo />
+
       </Box>
 
-      <ProductCategoryLineTwo />
-
-      <Box w={"100%"} h={"100%"} py={["1%", "1%", "2%", "2%", "2%"]}>
+    
+      <Box w={"100%"} h={"100%"}  py={["1%", "1%", "2%", "2%", "2%"]}>
         <BannerThree />
+        <ProductCategoryLineOne />
       </Box>
 
-      <ProductCategoryLineOne />
+     
     </VStack>
   );
 }
