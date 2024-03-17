@@ -50,13 +50,14 @@ export default function TopBanner() {
           {TopBannerIntro[0].subheading}
         </Text>
 
-        <Button leftIcon={<FaShoppingCart />} h={"50px"} w={"150px"}>
-          Add to Cart!
-        </Button>
+     
       </VStack>
 
-      <HStack bg={'green.300'} w={"100%"} h={"100%"} >
-
+      <HStack p={"3"} bg={'green.300'} w={"100%"} h={"100%"} justify={"center"} align={"end"} >
+      
+      <Button leftIcon={<FaShoppingCart />} h={"50px"} w={"150px"}>
+          Add to Cart!
+        </Button>
       </HStack>
     </HStack>
   );
