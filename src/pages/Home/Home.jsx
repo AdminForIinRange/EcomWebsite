@@ -17,6 +17,7 @@ export default function Home() {
       h={"100%"}
       w={"100%"}
     >
+
       <TopBanner />
       <TopCategoryNav />
 

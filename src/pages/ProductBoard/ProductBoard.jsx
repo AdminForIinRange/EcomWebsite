@@ -30,7 +30,7 @@ export default function ProductBoard() {
 
   return (
     <>
-      {isSmallerScreen ? (
+      {isSmallerScreen ? (   
         <IphoneScreen
           Frontproducts={Frontproducts}
           responsiveProductHeading={responsiveProductHeading}
@@ -44,50 +44,26 @@ export default function ProductBoard() {
               <SmallScreenProductBoard
                 Frontproducts={Frontproducts}
                 responsiveProductHeading={responsiveProductHeading}
-   
               />
               {
                 // clean up the code and change the bg box color,
                 // make all data golobal, not in redux, beucse its not a state change
-                //ratehr just push in in a data.jsx fille and spread that into Firebase doc or something
+                //ratehr just push in in a data.jsx fille and spread that into Firebase doc or something,
+                // my name is anjesh sss
               }
             </>
           ) : (
             <>
               <HStack
-               
                 align={"start"}
                 flexWrap={["nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
                 justify={"center"}
                 w={"100%"}
                 h={"100%"}
               >
-                <Box
-                  p={"2.5"}
-                  bgColor={Frontproducts[0].theme}
-                  w={"100%"}
-                  h={"100%"}
-                  rounded={"xl"}
-                >
-                  
-                  <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
-                    {Frontproducts[0].product}
-                  </Text>
-                  <Text fontSize={responsiveProductSubheading}>
-                    {Frontproducts[0].description}
-                  </Text>
 
-                  <Box
-                    mt={"15px"}
-                    w={"100%"}
-                    h={"150px"}
-                    rounded={"2xl"}
-                    bgSize={"cover"}
-                    bgImage={"url(" + Frontproducts[0].src + ")"}
-                    bgPos={"center"}
-                    bgRepeat={"no-repeat"}
-                  ></Box>
-                </Box>
+
+
                 <Box
                   p={"2.5"}
                   bgColor={Frontproducts[8].theme}
@@ -102,7 +78,6 @@ export default function ProductBoard() {
                   <Text fontSize={responsiveProductSubheading}>
                     {Frontproducts[8].description}
                   </Text>
-
                   <Box
                     mt={"15px"}
                     w={"100%"}
@@ -114,7 +89,6 @@ export default function ProductBoard() {
                     bgRepeat={"no-repeat"}
                   ></Box>
                 </Box>
-
 
                 <Box
                   p={"2.5"}
@@ -156,43 +130,37 @@ export default function ProductBoard() {
                   </Text>
 
                   <HStack>
-                  <Box
-                    mt={"15px"}
-                    w={"100%"}
-                    h={"150px"}
-                    rounded={"2xl"}
-                    bgSize={"cover"}
-                    bgImage={"url(" + Frontproducts[2].src + ")"}
-                    bgPos={"center"}
-                    bgRepeat={"no-repeat"}
-                  ></Box>
-                   <Box
-                    mt={"15px"}
-                    w={"100%"}
-                    h={"150px"}
-                    rounded={"2xl"}
-                    bgSize={"cover"}
-                    bgImage={"url(" + Frontproducts[2].srcTwo + ")"}
-                    bgPos={"center"}
-                    bgRepeat={"no-repeat"}
-                  ></Box>
-
+                    <Box
+                      mt={"15px"}
+                      w={"100%"}
+                      h={"150px"}
+                      rounded={"2xl"}
+                      bgSize={"cover"}
+                      bgImage={"url(" + Frontproducts[2].src + ")"}
+                      bgPos={"center"}
+                      bgRepeat={"no-repeat"}
+                    ></Box>
+                    <Box
+                      mt={"15px"}
+                      w={"100%"}
+                      h={"150px"}
+                      rounded={"2xl"}
+                      bgSize={"cover"}
+                      bgImage={"url(" + Frontproducts[2].srcTwo + ")"}
+                      bgPos={"center"}
+                      bgRepeat={"no-repeat"}
+                    ></Box>
                   </HStack>
-                 
-                  
                 </Box>
               </HStack>
 
               <HStack
-               
                 align={"start"}
                 flexWrap={"nowrap"}
                 justify={"center"}
                 w={"100%"}
                 h={"100%"}
               >
-
-              
                 <Box
                   p={"2.5"}
                   bgColor={Frontproducts[3].theme}
@@ -200,7 +168,6 @@ export default function ProductBoard() {
                   h={"100%"}
                   rounded={"xl"}
                 >
-
                   <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
                     {Frontproducts[3].product}
                   </Text>
@@ -219,7 +186,6 @@ export default function ProductBoard() {
                   ></Box>
                 </Box>
 
-             
                 <Box
                   p={"2.5"}
                   bgColor={Frontproducts[4].theme}
@@ -289,7 +255,7 @@ export default function ProductBoard() {
                     rounded={"2xl"}
                     bgSize={"cover"}
                     bgImage={"url(" + Frontproducts[6].src + ")"}
-                   backgroundPosition={"center"}
+                    backgroundPosition={"center"}
                     bgRepeat={"no-repeat"}
                   ></Box>
                 </Box>
@@ -313,7 +279,7 @@ export default function ProductBoard() {
                     rounded={"2xl"}
                     bgSize={"cover"}
                     bgImage={"url(" + Frontproducts[7].src + ")"}
-                   backgroundPosition={"center"}
+                    backgroundPosition={"center"}
                     bgRepeat={"no-repeat"}
                   ></Box>
                 </Box>

@@ -46,6 +46,7 @@ export default function ProductCategoryLineOne() {
       </ProductCategoryBox>
 
       <ProductLine>
+     
         {WomenFashionCategory.map((item, index) => (
           <VStack key={index} justify={"left"} align={"left"} mb={["10px", "10px", "20px", "20px", "20px"]}>
             <Box
