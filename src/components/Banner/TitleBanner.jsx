@@ -18,7 +18,7 @@ export default function TitleBanner() {
       justify={"center"}
       w={"100%"}
       h={"100%"}
-      py={"15px"}
+     
     >
       <Box w={"100%"} h={"100%"} >
         <Box
