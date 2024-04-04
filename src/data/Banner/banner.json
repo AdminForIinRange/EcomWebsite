@@ -1,51 +1,31 @@
-
-
 {
-
-
-
-
-
-
-
-
-  
   "TopBannerIntro": [
     {
-     
-
       "header": "Squidgy",
       "subheading": "Where Bouncing Brilliance Meets Your Shopping Whims!",
-      "src":"../../../assets/ProductBanner/ScatterWorkBanner.png"
+      "src": "../../../assets/ProductBanner/ScatterWorkBanner.png"
     }
   ],
 
-
   "FeaturedAdvertBanner": [
     {
-     
-
       "header": "Squidgy",
       "subheading": "We are Amazing"
     },
     {
-     
       "header": "Featured Porducts",
       "subheading": "Discover the Best with Our Featured Product!"
     }
-    
-    
   ],
   "WomenFashionBanner": [
     {
       "header": "Newest fashion trends",
       "subheading": "Unveiling the Latest in Fashion"
     },
-  {
-
-    "header": "Exclusive fashion",
-    "subheading": "View Catalogue"
-  }
+    {
+      "header": "Exclusive fashion",
+      "subheading": "View Catalogue"
+    }
   ],
 
   "TechnologyBanner": [

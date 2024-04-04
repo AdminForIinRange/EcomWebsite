@@ -32,7 +32,7 @@ export default function ProductCategoryLineOne() {
   const { WomenFashionCategory, CategoryBox } = ProductCategoryLine;
   return (
     <HStack align={"start"} py={"15px"} w={"100%"} h={"100%"}>
-      <ProductCategoryBox BtnTheme={"teal"} BgcTheme={"#F5DEB3"}> 
+      <ProductCategoryBox BtnTheme={"teal"} BgcTheme={"#F5DEB3"}>
         <Text
           fontSize={responsiveBannerHeading2}
           fontFamily={"Raleway"}
@@ -46,9 +46,13 @@ export default function ProductCategoryLineOne() {
       </ProductCategoryBox>
 
       <ProductLine>
-     
         {WomenFashionCategory.map((item, index) => (
-          <VStack key={index} justify={"left"} align={"left"} mb={["10px", "10px", "20px", "20px", "20px"]}>
+          <VStack
+            key={index}
+            justify={"left"}
+            align={"left"}
+            mb={["10px", "10px", "20px", "20px", "20px"]}
+          >
             <Box
               rounded={"md"}
               w={["100px", "150px", "250px", "250px", "250px"]}

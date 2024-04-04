@@ -14,7 +14,6 @@ export default function TopBanner() {
   const { TopBannerIntro } = banner;
   return (
     <HStack
-    
       h={responsiveTopBanner}
       rounded={"2xl"}
       bgSize={"cover"}
@@ -28,7 +27,6 @@ export default function TopBanner() {
       align={"start"}
       justify={"center"}
       w={"100%"}
-
     >
       <VStack
         color={"white"}
@@ -49,13 +47,17 @@ export default function TopBanner() {
         <Text fontSize={responsiveSubheading} fontFamily={"Raleway"}>
           {TopBannerIntro[0].subheading}
         </Text>
-
-     
       </VStack>
 
-      <HStack p={"3"} bg={'green.300'} w={"100%"} h={"100%"} justify={"center"} align={"end"} >
-      
-      <Button leftIcon={<FaShoppingCart />} h={"50px"} w={"150px"}>
+      <HStack
+        p={"3"}
+        bg={"green.300"}
+        w={"100%"}
+        h={"100%"}
+        justify={"center"}
+        align={"end"}
+      >
+        <Button leftIcon={<FaShoppingCart />} h={"50px"} w={"150px"}>
           Add to Cart!
         </Button>
       </HStack>

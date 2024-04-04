@@ -1,5 +1,4 @@
 ```js
-
 import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 
@@ -64,19 +63,13 @@ export default function ProductBoard() {
           w={"100%"}
           h={"100%"}
         >
-
-
-
-
-
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={["150px", "200px" ,"250px" ,"400px", "400px"]}
+            w={["150px", "200px", "250px", "400px", "400px"]}
             h={"100%"}
             rounded={"xl"}
           >
-           
             <Text fontSize={responsiveProductHading} fontWeight={"600"}>
               {Frontproducts[0].product}
             </Text>
@@ -87,7 +80,7 @@ export default function ProductBoard() {
             <Box
               mt={"15px"}
               w={"100%"}
-              h={["100px", "100px" ,"200px" ,"300px", "300px"]}
+              h={["100px", "100px", "200px", "300px", "300px"]}
               rounded={"2xl"}
               bgSize={"cover"}
               bgImage={"url(" + Frontproducts[0].src + ")"}
@@ -96,26 +89,10 @@ export default function ProductBoard() {
             ></Box>
           </Box>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={["150px", "200px" ,"250px" ,"400px", "400px"]}
+            w={["150px", "200px", "250px", "400px", "400px"]}
             h={"100%"}
             rounded={"xl"}
           >
@@ -128,7 +105,7 @@ export default function ProductBoard() {
             <Box
               mt={"15px"}
               w={"100%"}
-              h={["100px", "100px" ,"200px" ,"300px", "300px"]}
+              h={["100px", "100px", "200px", "300px", "300px"]}
               rounded={"2xl"}
               bgSize={"cover"}
               bgImage={"url(" + Frontproducts[1].src + ")"}
@@ -137,14 +114,10 @@ export default function ProductBoard() {
             ></Box>
           </Box>
 
-
-
-
-
           <Box
             p={"2.5"}
             bgColor={"#F6F6F6"}
-            w={["315px","415px","815px","815px","815px"]}
+            w={["315px", "415px", "815px", "815px", "815px"]}
             h={"100%"}
             rounded={"xl"}
           >
@@ -165,15 +138,6 @@ export default function ProductBoard() {
               bgRepeat={"no-repeat"}
             ></Box>
           </Box>
-
-
-
-
-
-
-
-
-
 
           <Box
             p={"2.5"}
@@ -231,6 +195,4 @@ export default function ProductBoard() {
 }
 
 // going to clean up the code and refactor some elements
-
-
 ```

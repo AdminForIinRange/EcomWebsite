@@ -1,19 +1,13 @@
 import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import HeadphoneYellow from "../../../assets/ProductBanner/HeadphoneYellow.png";
-export default function IphoneScreen({ 
+export default function IphoneScreen({
   Frontproducts,
-  
-  
 
   responsiveProductHeading,
-  
-  }) {
-  
+}) {
   return (
     <>
-     
-
       <HStack
         rounded={"md"}
         bg={"gray.200"}
@@ -22,8 +16,6 @@ export default function IphoneScreen({
         justify={"center"}
         w={"100%"}
         h={"100%"}
-     
-      
       >
         <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
@@ -79,14 +71,13 @@ export default function IphoneScreen({
 
       <HStack
         mt={"10px"}
-      bg={"gray.200"}
+        bg={"gray.200"}
         rounded={"md"}
         align={"start"}
         flexWrap={["nowrap", "nowrap", "nowrap", "nowrap", "nowrap"]}
         justify={"center"}
         w={"100%"}
         h={"100%"}
-     
       >
         <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>
@@ -120,7 +111,6 @@ export default function IphoneScreen({
             bgRepeat={"no-repeat"}
           ></Box>
         </Box>
-
 
         <Box p={"1.5"} w={"100%"} h={"100%"} rounded={"xl"}>
           <Text fontSize={responsiveProductHeading} fontWeight={"600"}>

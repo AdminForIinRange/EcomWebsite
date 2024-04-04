@@ -24,12 +24,11 @@ import ProductLine from "./Components/ProductLine";
 import ProductCategoryBox from "./Components/ProductCategoryBox";
 
 export default function ProductCategoryLineOne() {
-
   const { TechnologyCategory, CategoryBox } = ProductCategoryLine;
   return (
     <>
       <HStack align={"start"} py={"15px"} w={"100%"} h={"100%"}>
-        <ProductCategoryBox  BtnTheme={"gray"}BgcTheme={"#E2E8F0"}  >
+        <ProductCategoryBox BtnTheme={"gray"} BgcTheme={"#E2E8F0"}>
           <Text
             fontSize={responsiveBannerHeading2}
             fontFamily={"Raleway"}
@@ -44,7 +43,12 @@ export default function ProductCategoryLineOne() {
 
         <ProductLine>
           {TechnologyCategory.map((item, index) => (
-            <VStack  key={index} justify={"left"} align={"left"} mb={["10px", "10px", "20px", "20px", "20px"]}>
+            <VStack
+              key={index}
+              justify={"left"}
+              align={"left"}
+              mb={["10px", "10px", "20px", "20px", "20px"]}
+            >
               <Box
                 rounded={"md"}
                 w={["100px", "150px", "250px", "250px", "250px"]}

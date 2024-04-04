@@ -16,12 +16,6 @@
     }
   ],
 
-
-
-
-
-  
-
   "TechnologyCategory": [
     {
       "product": "Oculus VR Headset",
@@ -56,7 +50,7 @@
       "price": "$299.99",
       "oldPrice": "$399.99"
     },
-   
+
     {
       "product": "GameBoy",
       "description": "Fun Gadgets.",
@@ -64,97 +58,93 @@
       "theme": "#FAF089",
       "price": "$299.99",
       "oldPrice": "$399.99"
+    },
+
+    {
+      "product": "Portable Charger",
+      "description": "Power on the go.",
+      "src": "https://source.unsplash.com/random/600x400?charger portable",
+      "theme": "#9AE6B4",
+      "price": "$39.99"
+    },
+    {
+      "product": "4K Smart TV",
+      "description": "Cinematic experience at home.",
+      "src": "https://source.unsplash.com/random/600x400?tv smart",
+      "theme": "#63B3ED",
+      "price": "$599.99"
+    },
+    {
+      "product": "Drone with Camera",
+      "description": "Capture aerial views.",
+      "src": "https://source.unsplash.com/random/600x400?drone camera",
+      "theme": "#F4D03F",
+      "price": "$499.99"
+    },
+    {
+      "product": "Wireless Charger",
+      "description": "Effortless charging.",
+      "src": "https://source.unsplash.com/random/600x400?charger wireless",
+      "theme": "#D1D5DB",
+      "price": "$29.99"
+    },
+    {
+      "product": "Smartwatch",
+      "description": "Stay connected and active.",
+      "src": "https://source.unsplash.com/random/600x400?smartwatch",
+      "theme": "#E5E7EB",
+      "price": "$249.99"
+    },
+    {
+      "product": "Laptop",
+      "description": "Powerful and portable computing.",
+      "src": "https://source.unsplash.com/random/600x400?laptop",
+      "theme": "#6B7280",
+      "price": "$999.99"
+    },
+    {
+      "product": "Smart Speaker",
+      "description": "Voice-controlled virtual assistant.",
+      "src": "https://source.unsplash.com/random/600x400?smart speaker",
+      "theme": "#D1FAE5",
+      "price": "$99.99"
+    },
+    {
+      "product": "3D Printer",
+      "description": "Bring your designs to life.",
+      "src": "https://source.unsplash.com/random/600x400?3d printer",
+      "theme": "#F8FAFC",
+      "price": "$349.99"
+    },
+    {
+      "product": "Wireless Mouse",
+      "description": "Precise and cord-free control.",
+      "src": "https://source.unsplash.com/random/600x400?mouse wireless",
+      "theme": "#E0E7FF",
+      "price": "$29.99"
+    },
+    {
+      "product": "External SSD",
+      "description": "Fast and portable storage.",
+      "src": "https://source.unsplash.com/random/600x400?ssd external",
+      "theme": "#FAFAFA",
+      "price": "$129.99"
+    },
+    {
+      "product": "Bluetooth Speaker",
+      "description": "Portable and powerful audio.",
+      "src": "https://source.unsplash.com/random/600x400?speaker bluetooth",
+      "theme": "#FDE68A",
+      "price": "$79.99"
+    },
+    {
+      "product": "Gaming Keyboard",
+      "description": "Enhance your gaming experience.",
+      "src": "https://source.unsplash.com/random/600x400?keyboard gaming",
+      "theme": "#FECACA",
+      "price": "$99.99"
     }
-    
-    ,
-    
-  {
-    "product": "Portable Charger",
-    "description": "Power on the go.",
-    "src": "https://source.unsplash.com/random/600x400?charger portable",
-    "theme": "#9AE6B4",
-    "price": "$39.99"
-  },
-  {
-    "product": "4K Smart TV",
-    "description": "Cinematic experience at home.",
-    "src": "https://source.unsplash.com/random/600x400?tv smart",
-    "theme": "#63B3ED",
-    "price": "$599.99"
-  },
-  {
-    "product": "Drone with Camera",
-    "description": "Capture aerial views.",
-    "src": "https://source.unsplash.com/random/600x400?drone camera",
-    "theme": "#F4D03F",
-    "price": "$499.99"
-  },
-  {
-    "product": "Wireless Charger",
-    "description": "Effortless charging.",
-    "src": "https://source.unsplash.com/random/600x400?charger wireless",
-    "theme": "#D1D5DB",
-    "price": "$29.99"
-  },
-  {
-    "product": "Smartwatch",
-    "description": "Stay connected and active.",
-    "src": "https://source.unsplash.com/random/600x400?smartwatch",
-    "theme": "#E5E7EB",
-    "price": "$249.99"
-  },
-  {
-    "product": "Laptop",
-    "description": "Powerful and portable computing.",
-    "src": "https://source.unsplash.com/random/600x400?laptop",
-    "theme": "#6B7280",
-    "price": "$999.99"
-  },
-  {
-    "product": "Smart Speaker",
-    "description": "Voice-controlled virtual assistant.",
-    "src": "https://source.unsplash.com/random/600x400?smart speaker",
-    "theme": "#D1FAE5",
-    "price": "$99.99"
-  },
-  {
-    "product": "3D Printer",
-    "description": "Bring your designs to life.",
-    "src": "https://source.unsplash.com/random/600x400?3d printer",
-    "theme": "#F8FAFC",
-    "price": "$349.99"
-  },
-  {
-    "product": "Wireless Mouse",
-    "description": "Precise and cord-free control.",
-    "src": "https://source.unsplash.com/random/600x400?mouse wireless",
-    "theme": "#E0E7FF",
-    "price": "$29.99"
-  },
-  {
-    "product": "External SSD",
-    "description": "Fast and portable storage.",
-    "src": "https://source.unsplash.com/random/600x400?ssd external",
-    "theme": "#FAFAFA",
-    "price": "$129.99"
-  },
-  {
-    "product": "Bluetooth Speaker",
-    "description": "Portable and powerful audio.",
-    "src": "https://source.unsplash.com/random/600x400?speaker bluetooth",
-    "theme": "#FDE68A",
-    "price": "$79.99"
-  },
-  {
-    "product": "Gaming Keyboard",
-    "description": "Enhance your gaming experience.",
-    "src": "https://source.unsplash.com/random/600x400?keyboard gaming",
-    "theme": "#FECACA",
-    "price": "$99.99"
-  }
-   
   ],
-  
 
   "WomenFashionCategory": [
     {

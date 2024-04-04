@@ -5,22 +5,14 @@ import {
   responsiveHeading,
   responsiveSubheading,
   responsiveTitleBanner,
-
 } from "../../data/GlobalPresets/Presets";
 import banner from "../../data/Banner/banner.json";
 
 export default function TitleBanner() {
-
-  const { FeaturedAdvertBanner } = banner
+  const { FeaturedAdvertBanner } = banner;
   return (
-    <HStack
-      align={"start"}
-      justify={"center"}
-      w={"100%"}
-      h={"100%"}
-     
-    >
-      <Box w={"100%"} h={"100%"} >
+    <HStack align={"start"} justify={"center"} w={"100%"} h={"100%"}>
+      <Box w={"100%"} h={"100%"}>
         <Box
           w={"100%"}
           h={responsiveTitleBanner}

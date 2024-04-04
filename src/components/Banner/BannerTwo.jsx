@@ -8,15 +8,13 @@ import {
   responsiveProductHeading,
   responsiveBanner,
   responsiveBannerHeading2,
-  responsiveParagraph
-
+  responsiveParagraph,
 } from "../../data/GlobalPresets/Presets";
 import banner from "../../data/Banner/banner.json";
 import SeeMoreBtn from "../Buttons/SeeMoreBtn";
-import GirlOnAhill from "../../assets/ProductBanner/FasionBanner.png"
+import GirlOnAhill from "../../assets/ProductBanner/FasionBanner.png";
 export default function BannerTwo() {
-
-  const { WomenFashionBanner } = banner
+  const { WomenFashionBanner } = banner;
   return (
     <HStack
       align={"start"}
@@ -25,20 +23,22 @@ export default function BannerTwo() {
       h={"100%"}
       py={"15px"}
     >
-      <Box w={"100%"} h={"100%"} >
+      <Box w={"100%"} h={"100%"}>
         <Box
-   
           w={"100%"}
           h={responsiveBanner}
-         
           bgSize={"cover"}
           bgImage={GirlOnAhill}
-          bgPos={["bottom right", " bottom right", "center", "center", "center"]}
+          bgPos={[
+            "bottom right",
+            " bottom right",
+            "center",
+            "center",
+            "center",
+          ]}
           bgRepeat={"no-repeat"}
-          
           justifyContent={"end"}
           alignItems={"end"}
-          
         >
           <VStack
             color={"black"}
@@ -48,11 +48,8 @@ export default function BannerTwo() {
             justify={"top"}
             bgColor={"wheat"}
             p={"1%"}
-            
-          
           >
             <Text
-
               fontSize={responsiveBannerHeading2}
               fontFamily={"Raleway"}
               fontWeight={"700"}
@@ -62,10 +59,13 @@ export default function BannerTwo() {
             <Text fontSize={responsiveParagraph} fontFamily={"Raleway"}>
               {WomenFashionBanner[0].subheading}
             </Text>
-            <HStack   justify={"top"} align={"end"} h={["20%", "40%", "100%", "100%", "100%"]}>
-            <SeeMoreBtn BtnTheme={"teal"} />
+            <HStack
+              justify={"top"}
+              align={"end"}
+              h={["20%", "40%", "100%", "100%", "100%"]}
+            >
+              <SeeMoreBtn BtnTheme={"teal"} />
             </HStack>
-          
           </VStack>
         </Box>
       </Box>

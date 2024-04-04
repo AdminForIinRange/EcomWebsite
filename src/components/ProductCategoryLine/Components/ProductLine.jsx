@@ -8,19 +8,17 @@ import {
 } from "@chakra-ui/react";
 
 export default function ProductLine({ children }) {
-
-
   return (
-    <HStack 
-    id="style-1"
-          align={"start"}
-          w={"100%"}
-          h={"100%"}
-          overflowY={"hidden"}
-          overflowX={"scroll"}
-          gap={["10px", "15px", "15px", "20px", "20px"]}
-        >
-         {children}
-        </HStack>
+    <HStack
+      id="style-1"
+      align={"start"}
+      w={"100%"}
+      h={"100%"}
+      overflowY={"hidden"}
+      overflowX={"scroll"}
+      gap={["10px", "15px", "15px", "20px", "20px"]}
+    >
+      {children}
+    </HStack>
   );
 }

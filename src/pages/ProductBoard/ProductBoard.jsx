@@ -30,7 +30,7 @@ export default function ProductBoard() {
 
   return (
     <>
-      {isSmallerScreen ? (   
+      {isSmallerScreen ? (
         <IphoneScreen
           Frontproducts={Frontproducts}
           responsiveProductHeading={responsiveProductHeading}
@@ -61,9 +61,6 @@ export default function ProductBoard() {
                 w={"100%"}
                 h={"100%"}
               >
-
-
-
                 <Box
                   p={"2.5"}
                   bgColor={Frontproducts[8].theme}

@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   Box,
@@ -11,13 +10,10 @@ import {
 import SeeMoreBtn from "../../Buttons/SeeMoreBtn";
 
 export default function ProductCategoryBox({ children, BgcTheme, BtnTheme }) {
-  
-    const isSmallScreen = useBreakpointValue({ base: true, lg: false });
-  
-    return (
-      <>
-      
-  
+  const isSmallScreen = useBreakpointValue({ base: true, lg: false });
+
+  return (
+    <>
       {isSmallScreen ? (
         <></>
       ) : (
@@ -27,7 +23,7 @@ export default function ProductCategoryBox({ children, BgcTheme, BtnTheme }) {
           h={"300px"}
           align={"left"}
           justify={"top"}
-          bgColor={ BgcTheme}
+          bgColor={BgcTheme}
           p={"0.5%"}
           rounded={"md"}
           textAlign={"center"}
@@ -38,11 +34,10 @@ export default function ProductCategoryBox({ children, BgcTheme, BtnTheme }) {
             align={"end"}
             h={["50%", "60%", "60%", "60%", "60%"]}
           >
-            <SeeMoreBtn  BtnTheme={BtnTheme}/>
+            <SeeMoreBtn BtnTheme={BtnTheme} />
           </HStack>
         </VStack>
       )}
-          </>
-    );
-  }
-  
+    </>
+  );
+}

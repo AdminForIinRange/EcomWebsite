@@ -17,7 +17,6 @@ export default function Home() {
       h={"100%"}
       w={"100%"}
     >
-
       <TopBanner />
       <TopCategoryNav />
 
@@ -26,16 +25,12 @@ export default function Home() {
       <Box w={"100%"} h={"100%"} py={["1%", "1%", "2%", "2%", "2%"]}>
         <BannerTwo />
         <ProductCategoryLineTwo />
-
       </Box>
 
-    
-      <Box w={"100%"} h={"100%"}  py={["1%", "1%", "2%", "2%", "2%"]}>
+      <Box w={"100%"} h={"100%"} py={["1%", "1%", "2%", "2%", "2%"]}>
         <BannerThree />
         <ProductCategoryLineOne />
       </Box>
-
-     
     </VStack>
   );
 }

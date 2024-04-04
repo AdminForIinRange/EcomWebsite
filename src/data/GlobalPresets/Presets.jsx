@@ -1,4 +1,3 @@
-
 /**
  * This file contains the global presets for the responsive design.
  *
@@ -85,4 +84,3 @@ export const responsiveTextAlignment = [
   "inherit", // lg
   "inherit", // xl
 ];
-

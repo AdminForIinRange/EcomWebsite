@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, HStack, Text, VStack } from "@chakra-ui/react";
-export default function SeeMoreBtn({BtnTheme}) {
+export default function SeeMoreBtn({ BtnTheme }) {
   return (
     <Button
       bgColor={BtnTheme}
@@ -8,10 +8,7 @@ export default function SeeMoreBtn({BtnTheme}) {
       h={["20px", "25px", "35px", "35px", "35px"]}
       rounded={"2xl"}
     >
-      <Text
-        color={"white"}
-        fontSize={["10px", "10px", "15px", "15px", "16px"]}
-      >
+      <Text color={"white"} fontSize={["10px", "10px", "15px", "15px", "16px"]}>
         See More
       </Text>
     </Button>
