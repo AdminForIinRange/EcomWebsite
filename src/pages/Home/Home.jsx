@@ -1,7 +1,7 @@
 import React from "react";
 import ProductBoard from "../ProductBoard/ProductBoard";
 import TitleBanner from "../../components/Banner/TitleBanner";
-import { Box, VStack } from "@chakra-ui/react";
+import { Box, VStack, HStack, Text } from "@chakra-ui/react";
 import BannerTwo from "../../components/Banner/BannerTwo";
 import BannerThree from "../../components/Banner/BannerThree.jsx";
 import ProductCategoryLineOne from "../../components/ProductCategoryLine/ProductCategoryLineOne.jsx";
@@ -11,26 +11,28 @@ import TopCategoryNav from "../../components/NavbarsComponents/TopCategoryNav.js
 
 export default function Home() {
   return (
-    <VStack
-      px={["1%", "1%", "2%", "3%", "3%"]}
-      gap={"15px"}
-      h={"100%"}
-      w={"100%"}
-    >
-      <TopBanner />
-      <TopCategoryNav />
+    <>
+      <VStack
+        px={["1%", "1%", "2%", "3%", "3%"]}
+        gap={"15px"}
+        h={"100%"}
+        w={"100%"}
+      >
+        <TopBanner />
+        <TopCategoryNav />
 
-      <TitleBanner />
-      <ProductBoard />
-      <Box w={"100%"} h={"100%"} py={["1%", "1%", "2%", "2%", "2%"]}>
-        <BannerTwo />
-        <ProductCategoryLineTwo />
-      </Box>
+        <TitleBanner />
+        <ProductBoard />
+        <Box w={"100%"} h={"100%"} py={["1%", "1%", "2%", "2%", "2%"]}>
+          <BannerTwo />
+          <ProductCategoryLineTwo />
+        </Box>
 
-      <Box w={"100%"} h={"100%"} py={["1%", "1%", "2%", "2%", "2%"]}>
-        <BannerThree />
-        <ProductCategoryLineOne />
-      </Box>
-    </VStack>
+        <Box w={"100%"} h={"100%"} py={["1%", "1%", "2%", "2%", "2%"]}>
+          <BannerThree />
+          <ProductCategoryLineOne />
+        </Box>
+      </VStack>
+    </>
   );
 }
